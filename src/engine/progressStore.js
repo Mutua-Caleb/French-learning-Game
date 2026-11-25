@@ -7,7 +7,7 @@ const STORAGE_KEY = 'clavier_francais_state_v1';
 
 const DEFAULT_STATE = {
   prefs: {
-    voice: 'vivienne', // 'vivienne' | 'remy'
+    voice: 'denise', // 'denise' | 'henri'
     accentMode: 'smart', // 'smart' | 'strict'
     practiceMode: 'guided', // 'guided' | 'translate' | 'dictation'
     showKeyboard: true,
@@ -54,10 +54,13 @@ class ProgressStore {
       const raw = localStorage.getItem(STORAGE_KEY);
       if (!raw) return structuredClone(DEFAULT_STATE);
       const parsed = JSON.parse(raw);
+      const mergedPrefs = { ...DEFAULT_STATE.prefs, ...(parsed.prefs || {}) };
+      if (mergedPrefs.voice === 'vivienne') mergedPrefs.voice = 'denise';
+      if (mergedPrefs.voice === 'remy') mergedPrefs.voice = 'henri';
       return {
         ...structuredClone(DEFAULT_STATE),
         ...parsed,
-        prefs: { ...DEFAULT_STATE.prefs, ...(parsed.prefs || {}) },
+        prefs: mergedPrefs,
         streak: { ...DEFAULT_STATE.streak, ...(parsed.streak || {}) },
         lessons: parsed.lessons || {},
       };

@@ -528,8 +528,8 @@ export function createStageController(container, { curriculum, onBackToLessons, 
           </div>
 
           <div class="stage-controls">
-            <button type="button" class="toggle-pill is-on" id="ctl-voice" title="Switch native French speaker">
-              🎙 ${prefs.voice === 'remy' ? 'Rémy' : 'Vivienne'}
+            <button type="button" class="toggle-pill is-on" id="ctl-voice" title="Switch native Parisian French speaker">
+              🎙 ${prefs.voice === 'henri' ? 'Henri' : 'Denise'}
             </button>
             <button
               type="button"
@@ -584,7 +584,7 @@ export function createStageController(container, { curriculum, onBackToLessons, 
                 title="Listen in native French (Ctrl+Space)"
               >
                 <span class="eq-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
-                <span>Listen (${prefs.voice === 'remy' ? 'Rémy' : 'Vivienne'})</span>
+                <span>Listen (${prefs.voice === 'henri' ? 'Henri' : 'Denise'})</span>
               </button>
               <button
                 type="button"
@@ -686,7 +686,7 @@ export function createStageController(container, { curriculum, onBackToLessons, 
     });
 
     container.querySelector('#ctl-voice')?.addEventListener('click', () => {
-      const next = progressStore.getPrefs().voice === 'remy' ? 'vivienne' : 'remy';
+      const next = progressStore.getPrefs().voice === 'henri' ? 'denise' : 'henri';
       progressStore.updatePref('voice', next);
       renderActiveStage();
       playCurrentItem(false);

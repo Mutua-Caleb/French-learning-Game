@@ -24,7 +24,7 @@ export function renderPhrasebookView(container, curriculum) {
   let filterChapter = 'all';
 
   function render() {
-    const voice = progressStore.getPrefs().voice || 'vivienne';
+    const voice = progressStore.getPrefs().voice || 'denise';
     const q = searchQuery.trim().toLowerCase();
     const filtered = allEntries.filter((e) => {
       if (filterChapter !== 'all' && e.chapterId !== filterChapter) return false;
@@ -75,7 +75,7 @@ export function renderPhrasebookView(container, curriculum) {
                 class="icon-play-btn"
                 data-play-id="${item.id}"
                 data-slow="false"
-                title="Listen (${voice === 'remy' ? 'Rémy' : 'Vivienne'})"
+                title="Listen (${voice === 'henri' ? 'Henri' : 'Denise'})"
                 aria-label="Play ${item.fr}"
               >▶</button>
               <button
@@ -98,11 +98,11 @@ export function renderPhrasebookView(container, curriculum) {
             Audio Phrasebook &amp; Grammar Reference
           </h1>
           <p style="margin:0; color:var(--ink-secondary); font-size:14.5px;">
-            Every key table, word, and sentence from <strong>French 1-9-32.pdf</strong> with studio-quality native French pronunciation.
+            Every key table, word, and sentence from <strong>French 1-9-32.pdf</strong> with studio-quality native Parisian French pronunciation.
           </p>
         </div>
         <button type="button" class="toggle-pill is-on" id="pb-voice-toggle">
-          🎙 Voice: ${voice === 'remy' ? 'Rémy (Male)' : 'Vivienne (Female)'}
+          🎙 Voice: ${voice === 'henri' ? 'Henri (Male)' : 'Denise (Female)'}
         </button>
       </div>
 
@@ -146,7 +146,7 @@ export function renderPhrasebookView(container, curriculum) {
     });
 
     container.querySelector('#pb-voice-toggle')?.addEventListener('click', () => {
-      const next = progressStore.getPrefs().voice === 'remy' ? 'vivienne' : 'remy';
+      const next = progressStore.getPrefs().voice === 'henri' ? 'denise' : 'henri';
       progressStore.updatePref('voice', next);
       render();
     });

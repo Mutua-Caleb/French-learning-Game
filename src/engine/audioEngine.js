@@ -1,8 +1,8 @@
 /**
  * Lifelike French Audio Engine
- * Plays studio-quality neural French MP3s pre-generated with Microsoft Multilingual Neural voices:
- *   - vivienne: fr-FR-VivienneMultilingualNeural (warm Parisian female)
- *   - remy:     fr-FR-RemyMultilingualNeural     (warm Parisian male)
+ * Plays studio-quality native Parisian French MP3s pre-generated with dedicated fr-FR neural voices:
+ *   - denise: fr-FR-DeniseNeural (native Parisian female)
+ *   - henri:  fr-FR-HenriNeural  (native Parisian male)
  *
  * Preloads upcoming lesson clips for instant zero-latency playback, supports 1.0x and 0.75x
  * clear slow playback, and falls back gracefully to high-quality browser French voices if
@@ -29,12 +29,12 @@ class FrenchAudioEngine {
     }
   }
 
-  getUrl(itemId, voice = 'vivienne') {
-    const safeVoice = voice === 'remy' ? 'remy' : 'vivienne';
+  getUrl(itemId, voice = 'denise') {
+    const safeVoice = voice === 'henri' ? 'henri' : 'denise';
     return `./audio/${safeVoice}/${itemId}.mp3`;
   }
 
-  preload(items, voice = 'vivienne') {
+  preload(items, voice = 'denise') {
     if (!Array.isArray(items)) return;
     items.slice(0, 8).forEach((item) => {
       if (!item?.id) return;
@@ -64,7 +64,7 @@ class FrenchAudioEngine {
     this.emit(false, null);
   }
 
-  async play(item, { voice = 'vivienne', slow = false } = {}) {
+  async play(item, { voice = 'denise', slow = false } = {}) {
     if (!item) return;
     this.stop();
 

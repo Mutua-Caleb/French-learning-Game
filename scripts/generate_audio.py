@@ -2,9 +2,10 @@
 """
 Generate lifelike neural French MP3 audio clips for every item in src/data/curriculum.json.
 
-Uses Microsoft's ultra-natural Multilingual Neural French voices via edge-tts:
-  - vivienne -> fr-FR-VivienneMultilingualNeural (warm, natural female Parisian voice)
-  - remy     -> fr-FR-RemyMultilingualNeural     (warm, natural male Parisian voice)
+Uses Microsoft's dedicated native Parisian French neural voices via edge-tts
+(non-multilingual models so short words like "la table" never trigger Spanish/English auto-detection):
+  - denise -> fr-FR-DeniseNeural (authentic, warm native Parisian female voice)
+  - henri  -> fr-FR-HenriNeural  (authentic, warm native Parisian male voice)
 
 Usage:
   pip install edge-tts
@@ -23,8 +24,8 @@ CURRICULUM_PATH = ROOT / "src" / "data" / "curriculum.json"
 AUDIO_ROOT = ROOT / "public" / "audio"
 
 VOICES = {
-    "vivienne": "fr-FR-VivienneMultilingualNeural",
-    "remy": "fr-FR-RemyMultilingualNeural",
+    "denise": "fr-FR-DeniseNeural",
+    "henri": "fr-FR-HenriNeural",
 }
 
 CONCURRENCY = 10
@@ -41,7 +42,7 @@ async def synth_one(sem: asyncio.Semaphore, voice_key: str, voice_id: str, item_
     async with sem:
         for attempt in range(3):
             try:
-                communicate = edge_tts.Communicate(text=text, voice=voice_id, rate="-4%")
+                communicate = edge_tts.Communicate(text=text, voice=voice_id, rate="+0%")
                 await communicate.save(str(out_path))
                 if out_path.exists() and out_path.stat().st_size > 500:
                     return "generated"

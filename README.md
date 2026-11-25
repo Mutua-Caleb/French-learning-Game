@@ -9,7 +9,7 @@ An immersive French learning game that reimagines touch-typing practice (inspire
   - **Translate (`EN → FR`)**: See the English word or full sentence and type the French from memory into word-length letter slots — press `Tab` for a letter hint or `Shift+Tab` to reveal a word, and hear the native French voice reward each completed item.
   - **Dictation (`Listen`)**: Pure listening immersion — hear the natural French speaker first and type what you hear, with `0.75× Slow` clear playback anytime.
 - **Studio-Quality Human-Sounding French Voices (Zero Robotic TTS)**
-  - Every single one of the **176 Phase 1 French words and sentences** ships with pre-generated neural French MP3s in **two native Parisian voices**: **Vivienne** (`fr-FR-VivienneMultilingualNeural`) and **Rémy** (`fr-FR-RemyMultilingualNeural`).
+  - Every single one of the **176 Phase 1 French words and sentences** ships with pre-generated native Parisian French MP3s in **two dedicated French neural voices**: **Denise** (`fr-FR-DeniseNeural`) and **Henri** (`fr-FR-HenriNeural`).
   - Plays instantaneously offline with zero API keys required, supporting both `1.0×` natural speed and `0.75×` clear slow speed.
 - **Typing.com-Inspired Bright Light UI & Tactile Keyboard**
   - Sunlit sky-and-paper palette, live **WPM**, **Accuracy %**, **Combo Streak**, **1–3 Star mastery ratings**, subtle tactile mechanical key sounds, and a live interactive QWERTY visual keyboard with pastel finger-zone guides.
