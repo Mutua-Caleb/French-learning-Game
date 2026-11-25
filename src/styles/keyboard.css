@@ -1,0 +1,176 @@
+/* ==========================================================================
+   Typing.com-Style Interactive Tactile Light Keyboard
+   ========================================================================== */
+
+.keyboard-card {
+  background: #e7f0fa;
+  border: 1.5px solid #cdddf0;
+  border-radius: var(--radius-xl);
+  padding: 16px 18px 18px;
+  box-shadow: inset 0 2px 4px rgba(23, 38, 60, 0.04);
+  user-select: none;
+}
+
+.keyboard-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+  padding: 0 4px;
+}
+
+.keyboard-guide-tip {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ink-secondary);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.finger-legend {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--ink-muted);
+}
+
+.finger-dot {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.finger-dot i {
+  width: 9px;
+  height: 9px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.kb-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.kb-row {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.kb-key {
+  position: relative;
+  height: 44px;
+  min-width: 44px;
+  flex: 1;
+  max-width: 56px;
+  padding: 0 6px;
+  border-radius: 9px;
+  border: 1.5px solid #cbd9ea;
+  background: linear-gradient(180deg, #ffffff 0%, #f6faff 100%);
+  box-shadow: 0 3px 0 #c1d3e8;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 70ms ease, background 90ms ease, border-color 90ms ease, box-shadow 70ms ease;
+}
+
+.kb-key.kb-wide-sm { flex: 1.45; max-width: 82px; font-family: var(--font-sans); font-size: 11.5px; color: var(--ink-secondary); }
+.kb-key.kb-wide-md { flex: 1.75; max-width: 98px; font-family: var(--font-sans); font-size: 11.5px; color: var(--ink-secondary); }
+.kb-key.kb-wide-lg { flex: 2.2; max-width: 126px; font-family: var(--font-sans); font-size: 12px; color: var(--ink-secondary); }
+.kb-key.kb-space { flex: 6.2; max-width: 350px; font-family: var(--font-sans); font-size: 12px; color: var(--ink-muted); letter-spacing: 0.04em; }
+
+/* Home row homing bars on F and J */
+.kb-key[data-code="KeyF"]::after,
+.kb-key[data-code="KeyJ"]::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  width: 12px;
+  height: 2px;
+  border-radius: 2px;
+  background: #9bb4d0;
+}
+
+/* Typing.com Subtle Pastel Finger Zones */
+.keyboard-card.show-zones .kb-key.z-pinky { background: linear-gradient(180deg, #ffffff 0%, #fff1f2 100%); border-color: #f3cdd3; }
+.keyboard-card.show-zones .kb-key.z-ring { background: linear-gradient(180deg, #ffffff 0%, #fff7e6 100%); border-color: #f4dcb0; }
+.keyboard-card.show-zones .kb-key.z-middle { background: linear-gradient(180deg, #ffffff 0%, #ecfdf5 100%); border-color: #bde8d4; }
+.keyboard-card.show-zones .kb-key.z-index-l { background: linear-gradient(180deg, #ffffff 0%, #eff6ff 100%); border-color: #c2dcfa; }
+.keyboard-card.show-zones .kb-key.z-index-r { background: linear-gradient(180deg, #ffffff 0%, #eef9fb 100%); border-color: #bae4ea; }
+
+/* Next Expected Key Highlight */
+.kb-key.is-next {
+  background: var(--blue-500) !important;
+  border-color: var(--blue-600) !important;
+  color: #ffffff !important;
+  box-shadow: 0 3px 0 var(--blue-700), 0 0 0 3px rgba(28, 136, 245, 0.22);
+  transform: translateY(-1px);
+}
+
+.kb-key.is-next::after {
+  background: rgba(255, 255, 255, 0.75);
+}
+
+/* Real-time Key Press Feedback */
+.kb-key.is-pressed-hit {
+  background: var(--green-500) !important;
+  border-color: var(--green-600) !important;
+  color: #ffffff !important;
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 #0a6b46;
+}
+
+.kb-key.is-pressed-miss {
+  background: var(--red-500) !important;
+  border-color: #c83338 !important;
+  color: #ffffff !important;
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 #9f2226;
+}
+
+.kb-key-sub {
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  font-size: 9px;
+  opacity: 0.55;
+  font-weight: 600;
+}
+
+@media (max-width: 780px) {
+  .keyboard-card {
+    padding: 10px 8px 12px;
+  }
+
+  .kb-row {
+    gap: 4px;
+  }
+
+  .kb-key {
+    height: 38px;
+    min-width: 24px;
+    font-size: 12px;
+    padding: 0 3px;
+    border-radius: 7px;
+  }
+
+  .finger-legend {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .keyboard-card {
+    display: none;
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "clavier-francais",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Immersive French learning through typing practice with lifelike native French audio and a bright Typing.com-inspired interface.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "generate-audio": "python3 scripts/generate_audio.py"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}

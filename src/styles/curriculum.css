@@ -1,0 +1,482 @@
+/* ==========================================================================
+   Curriculum Map (Lessons) & Audio Phrasebook / Grammar Reference
+   ========================================================================== */
+
+.hero-banner {
+  display: grid;
+  grid-template-columns: 1.35fr 0.95fr;
+  gap: 24px;
+  align-items: center;
+  background: linear-gradient(135deg, #ffffff 0%, #f3f9ff 62%, #e8f4ff 100%);
+  border: 1.5px solid #cde2f9;
+  border-radius: var(--radius-xl);
+  padding: 28px 32px;
+  box-shadow: var(--shadow-card);
+  margin-bottom: 28px;
+}
+
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--blue-600);
+  margin-bottom: 8px;
+}
+
+.hero-banner h1 {
+  margin: 0 0 10px;
+  font-size: clamp(26px, 3.2vw, 35px);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: var(--ink-primary);
+}
+
+.hero-banner p {
+  margin: 0 0 20px;
+  font-size: 15px;
+  color: var(--ink-secondary);
+  max-width: 540px;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.hero-progress-panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px 22px;
+  box-shadow: 0 4px 14px rgba(23, 38, 60, 0.05);
+}
+
+.hero-panel-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.hero-panel-title {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--ink-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.hero-panel-pct {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--blue-600);
+}
+
+.hero-mini-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.hero-mini-stat {
+  background: var(--surface-subtle);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.hero-mini-val {
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--ink-primary);
+  line-height: 1.1;
+}
+
+.hero-mini-lbl {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--ink-muted);
+  margin-top: 2px;
+}
+
+/* Chapters & Lesson Cards */
+.chapter-section {
+  margin-bottom: 32px;
+}
+
+.chapter-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.chapter-title-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.chapter-num-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 800;
+  color: #ffffff;
+  flex-shrink: 0;
+  box-shadow: 0 3px 8px rgba(28, 136, 245, 0.25);
+}
+
+.chapter-heading {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: var(--ink-primary);
+}
+
+.chapter-sub {
+  margin: 2px 0 0;
+  font-size: 14px;
+  color: var(--ink-secondary);
+}
+
+.lessons-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.lesson-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  box-shadow: var(--shadow-card);
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.lesson-card:hover {
+  transform: translateY(-2px);
+  border-color: #9ecbff;
+  box-shadow: 0 8px 24px rgba(28, 136, 245, 0.11);
+}
+
+.lesson-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.lesson-num {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--blue-700);
+  background: var(--blue-100);
+  padding: 3px 9px;
+  border-radius: var(--radius-pill);
+}
+
+.lesson-stars-inline {
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #d6e2f0;
+}
+
+.lesson-stars-inline .earned {
+  color: var(--amber-500);
+}
+
+.lesson-title {
+  margin: 8px 0 2px;
+  font-size: 16.5px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--ink-primary);
+  line-height: 1.25;
+}
+
+.lesson-french-sub {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--blue-600);
+  margin-bottom: 6px;
+}
+
+.lesson-desc {
+  margin: 0;
+  font-size: 13px;
+  color: var(--ink-secondary);
+  line-height: 1.45;
+}
+
+.lesson-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ink-muted);
+}
+
+.lesson-mode-badges {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.mode-mini {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 7px;
+  background: var(--surface-subtle);
+  border: 1px solid var(--border);
+  color: var(--ink-muted);
+}
+
+.mode-mini.is-cleared {
+  background: var(--green-100);
+  border-color: #9de2c4;
+  color: var(--green-600);
+}
+
+.lesson-card-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.lesson-card-actions .btn {
+  flex: 1;
+}
+
+/* ==========================================================================
+   Phrasebook & Grammar Reference View
+   ========================================================================== */
+
+.phrasebook-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  flex: 1;
+  min-width: 240px;
+  max-width: 420px;
+  position: relative;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 11px 14px 11px 38px;
+  border-radius: 12px;
+  border: 1.5px solid var(--border-strong);
+  background: var(--surface);
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.search-box input:focus {
+  border-color: var(--blue-500);
+  box-shadow: 0 0 0 3px rgba(28, 136, 245, 0.14);
+}
+
+.search-box svg {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 17px;
+  height: 17px;
+  color: var(--ink-muted);
+}
+
+.filter-pills {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.phrase-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.phrase-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  box-shadow: 0 1px 4px rgba(23, 38, 60, 0.04);
+  transition: border-color var(--transition-fast);
+}
+
+.phrase-card:hover {
+  border-color: #a9cdf8;
+}
+
+.phrase-fr {
+  font-family: var(--font-mono);
+  font-size: 15.5px;
+  font-weight: 700;
+  color: var(--ink-primary);
+}
+
+.phrase-en {
+  font-size: 13.5px;
+  color: var(--ink-secondary);
+  margin-top: 2px;
+}
+
+.phrase-hint {
+  font-size: 12px;
+  color: var(--ink-muted);
+  margin-top: 3px;
+}
+
+.phrase-play-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.icon-play-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1.5px solid #b9dafc;
+  background: var(--blue-50);
+  color: var(--blue-600);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  transition: all var(--transition-fast);
+}
+
+.icon-play-btn:hover {
+  background: var(--blue-500);
+  border-color: var(--blue-600);
+  color: #ffffff;
+}
+
+/* Grammar Cards */
+.grammar-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.grammar-card {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  box-shadow: var(--shadow-card);
+}
+
+.grammar-card h3 {
+  margin: 0 0 4px;
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--ink-primary);
+}
+
+.grammar-card p {
+  margin: 0 0 14px;
+  font-size: 13.5px;
+  color: var(--ink-secondary);
+}
+
+.grammar-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.grammar-table th {
+  text-align: left;
+  padding: 8px 10px;
+  background: var(--surface-muted);
+  color: var(--ink-secondary);
+  font-weight: 700;
+  border-bottom: 1.5px solid var(--border);
+}
+
+.grammar-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--border);
+  color: var(--ink-primary);
+}
+
+.grammar-table tr:last-child td {
+  border-bottom: none;
+}
+
+.grammar-table td:nth-child(2),
+.grammar-table td:nth-child(3) {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--blue-700);
+}
+
+@media (max-width: 960px) {
+  .hero-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .lessons-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grammar-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .lessons-grid,
+  .phrase-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-banner {
+    padding: 20px;
+  }
+}
