@@ -2,25 +2,37 @@ import './styles/design-system.css';
 import './styles/typing-stage.css';
 import './styles/keyboard.css';
 import './styles/curriculum.css';
+import './styles/verbs.css';
 
 import curriculum from './data/curriculum.json';
+import verbsData from './data/verbs.json';
 import { progressStore } from './engine/progressStore.js';
 import { soundEffects } from './engine/soundEffects.js';
 import { renderCurriculumView } from './components/curriculumView.js';
+import { renderVerbsView } from './components/verbsView.js';
 import { renderPhrasebookView } from './components/phrasebookView.js';
 import { createStageController } from './components/stageView.js';
 
 const mainEl = document.getElementById('main-content');
 const navTabs = document.querySelectorAll('.nav-tab');
-const allLessons = curriculum.chapters.flatMap((ch) => ch.lessons);
+const allCurriculumLessons = curriculum.chapters.flatMap((ch) => ch.lessons);
+const allVerbTracks = verbsData.tracks.map((t) => ({ ...t, sourceSection: 'verbs' }));
+const allTrackedIds = [
+  ...allCurriculumLessons.map((l) => l.id),
+  ...allVerbTracks.map((t) => t.id),
+  ...verbsData.verbs.map((v) => `verb-${v.id}`),
+];
 
 let activeView = 'lessons';
-let currentLesson = allLessons.find((l) => l.id === progressStore.state.lastLessonId) || allLessons[0];
+let currentLesson =
+  allCurriculumLessons.find((l) => l.id === progressStore.state.lastLessonId) ||
+  allVerbTracks.find((t) => t.id === progressStore.state.lastLessonId) ||
+  allCurriculumLessons[0];
 
 soundEffects.setEnabled(progressStore.getPrefs().keySounds);
 
 function refreshHeaderStats() {
-  const summary = progressStore.getSummary(allLessons.map((l) => l.id));
+  const summary = progressStore.getSummary(allTrackedIds);
   const streakEl = document.getElementById('hdr-streak');
   const starsEl = document.getElementById('hdr-stars');
   const wpmEl = document.getElementById('hdr-best-wpm');
@@ -32,8 +44,16 @@ function refreshHeaderStats() {
 
 const stageController = createStageController(mainEl, {
   curriculum,
+  verbsData,
   onBackToLessons: () => switchView('lessons'),
-  onOpenLesson: (lessonId, mode) => openLesson(lessonId, mode),
+  onBackToVerbs: () => switchView('verbs'),
+  onOpenLesson: (lessonOrId, mode) => {
+    if (typeof lessonOrId === 'object' && lessonOrId !== null) {
+      openLessonObject(lessonOrId, mode);
+    } else {
+      openLesson(lessonOrId, mode);
+    }
+  },
   onStatsUpdated: () => refreshHeaderStats(),
 });
 
@@ -46,7 +66,7 @@ function setActiveTab(viewName) {
 function buildDailySprintLesson() {
   const pool = [];
   const seen = new Set();
-  for (const lesson of allLessons) {
+  for (const lesson of allCurriculumLessons) {
     for (const item of lesson.items) {
       if (!seen.has(item.id)) {
         seen.add(item.id);
@@ -54,7 +74,6 @@ function buildDailySprintLesson() {
       }
     }
   }
-  // Fisher-Yates shuffle
   for (let i = pool.length - 1; i > 0; i -= 1) {
     const j = Math.floor(Math.random() * (i + 1));
     [pool[i], pool[j]] = [pool[j], pool[i]];
@@ -70,22 +89,24 @@ function buildDailySprintLesson() {
   };
 }
 
-function openLesson(lessonId, mode) {
-  const found = allLessons.find((l) => l.id === lessonId) || allLessons[0];
-  currentLesson = found;
+function openLessonObject(lessonObj, mode) {
+  currentLesson = lessonObj;
   activeView = 'stage';
   setActiveTab('stage');
-  stageController.start(found, mode || progressStore.getPrefs().practiceMode || 'guided');
+  stageController.start(lessonObj, mode || progressStore.getPrefs().practiceMode || 'guided');
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+function openLesson(lessonId, mode) {
+  const found =
+    allCurriculumLessons.find((l) => l.id === lessonId) ||
+    allVerbTracks.find((t) => t.id === lessonId) ||
+    allCurriculumLessons[0];
+  openLessonObject(found, mode);
+}
+
 function startDailySprint() {
-  const sprintLesson = buildDailySprintLesson();
-  currentLesson = sprintLesson;
-  activeView = 'stage';
-  setActiveTab('stage');
-  stageController.start(sprintLesson, 'translate');
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  openLessonObject(buildDailySprintLesson(), 'translate');
 }
 
 function switchView(viewName) {
@@ -99,6 +120,10 @@ function switchView(viewName) {
     renderCurriculumView(mainEl, curriculum, {
       onSelectLesson: (lessonId, mode) => openLesson(lessonId, mode),
       onStartDailySprint: () => startDailySprint(),
+    });
+  } else if (viewName === 'verbs') {
+    renderVerbsView(mainEl, verbsData, {
+      onStartLesson: (lessonObj, mode) => openLessonObject(lessonObj, mode),
     });
   } else if (viewName === 'stage') {
     stageController.start(currentLesson, progressStore.getPrefs().practiceMode || 'guided');

@@ -86,7 +86,39 @@ function buildTypingTrackHTML(session) {
 }
 
 function getRelevantGrammar(lesson, curriculum) {
+  if (lesson.verbMeta) {
+    const v = lesson.verbMeta;
+    const pronouns = ['je', 'tu', 'il/elle', 'nous', 'vous', 'ils/elles'];
+    return {
+      title: `${v.infinitive} (${v.en}) — 4 Core Tenses`,
+      pages: `aux: ${v.aux}`,
+      summary: v.tip,
+      headers: ['Pronoun', 'Présent', 'Passé composé', 'Imparfait', 'Futur simple'],
+      rows: pronouns.map((p, i) => [
+        p,
+        v.conjugations.present[i],
+        v.conjugations.passe_compose[i],
+        v.conjugations.imparfait[i],
+        v.conjugations.futur[i],
+      ]),
+    };
+  }
   const id = lesson.id || '';
+  if (id.startsWith('verbs-')) {
+    return {
+      title: 'French Verb Conjugation Quick Guide',
+      pages: 'Preply Top 20',
+      summary:
+        'Use Présent for now/ongoing, Passé composé for completed past (avoir for most verbs, être for aller/venir), Imparfait for past habits (-ais, -ais, -ait, -ions, -iez, -aient), and Futur simple (-ai, -as, -a, -ons, -ez, -ont).',
+      headers: ['Tense', 'Key Pattern / Auxiliary', 'Example (parler)', 'Example (aller)'],
+      rows: [
+        ['Présent', '-e, -es, -e, -ons, -ez, -ent', 'je parle', 'je vais'],
+        ['Passé composé', 'avoir / être + past participle', "j'ai parlé", 'je suis allé'],
+        ['Imparfait', 'nous stem + -ais/-ait/-aient', 'je parlais', "j'allais"],
+        ['Futur simple', 'stem + -ai/-as/-a/-ons/-ez/-ont', 'je parlerai', "j'irai"],
+      ],
+    };
+  }
   if (id.includes('ch2-l3') || id.includes('ch3-l3')) {
     return curriculum.grammarGuides.find((g) => g.id === 'articles') || curriculum.grammarGuides[0];
   }
@@ -99,7 +131,10 @@ function getRelevantGrammar(lesson, curriculum) {
   return curriculum.grammarGuides.find((g) => g.id === 'possession') || curriculum.grammarGuides[0];
 }
 
-export function createStageController(container, { curriculum, onBackToLessons, onOpenLesson, onStatsUpdated }) {
+export function createStageController(
+  container,
+  { curriculum, verbsData, onBackToLessons, onBackToVerbs, onOpenLesson, onStatsUpdated }
+) {
   let session = null;
   let advanceTimer = null;
   let wpmTimer = null;
@@ -334,9 +369,13 @@ export function createStageController(container, { curriculum, onBackToLessons, 
   }
 
   function renderSummary(summary) {
-    const allLessons = curriculum.chapters.flatMap((c) => c.lessons);
-    const curIdx = allLessons.findIndex((l) => l.id === summary.lesson.id);
-    const nextLesson = curIdx >= 0 && curIdx + 1 < allLessons.length ? allLessons[curIdx + 1] : null;
+    const isVerbLesson =
+      summary.lesson.sourceSection === 'verbs' || String(summary.lesson.id || '').startsWith('verb');
+    const sequence = isVerbLesson
+      ? (verbsData?.tracks || []).map((t) => ({ ...t, sourceSection: 'verbs' }))
+      : curriculum.chapters.flatMap((c) => c.lessons);
+    const curIdx = sequence.findIndex((l) => l.id === summary.lesson.id);
+    const nextLesson = curIdx >= 0 && curIdx + 1 < sequence.length ? sequence[curIdx + 1] : null;
     const nextMode =
       summary.mode === 'guided' ? 'translate' : summary.mode === 'translate' ? 'dictation' : null;
 
@@ -408,7 +447,7 @@ export function createStageController(container, { curriculum, onBackToLessons, 
           ${
             nextLesson
               ? `<button type="button" class="btn ${nextMode ? 'btn-success' : 'btn-primary'}" id="sum-next-lesson">
-                  Next Lesson (${nextLesson.number}) →
+                  ${isVerbLesson ? `Next Track (${nextLesson.number})` : `Next Lesson (${nextLesson.number})`} →
                 </button>`
               : ''
           }
@@ -420,7 +459,7 @@ export function createStageController(container, { curriculum, onBackToLessons, 
               : ''
           }
           <button type="button" class="btn btn-secondary" id="sum-retry">Practice Again</button>
-          <button type="button" class="btn btn-ghost" id="sum-back">All Lessons</button>
+          <button type="button" class="btn btn-ghost" id="sum-back">${isVerbLesson ? 'All Verbs' : 'All Lessons'}</button>
         </div>
       </section>
     `;
@@ -437,7 +476,7 @@ export function createStageController(container, { curriculum, onBackToLessons, 
     });
 
     container.querySelector('#sum-next-lesson')?.addEventListener('click', () => {
-      if (nextLesson) onOpenLesson(nextLesson.id, 'guided');
+      if (nextLesson) onOpenLesson(nextLesson, 'guided');
     });
 
     container.querySelector('#sum-drill-missed')?.addEventListener('click', () => {
@@ -448,6 +487,8 @@ export function createStageController(container, { curriculum, onBackToLessons, 
           title: `Missed Items — ${summary.lesson.title}`,
           frenchTitle: 'Révision ciblée',
           pages: summary.lesson.pages,
+          sourceSection: summary.lesson.sourceSection,
+          verbMeta: summary.lesson.verbMeta,
           items: summary.missedItems,
         },
         summary.mode
@@ -459,7 +500,11 @@ export function createStageController(container, { curriculum, onBackToLessons, 
     });
 
     container.querySelector('#sum-back')?.addEventListener('click', () => {
-      onBackToLessons();
+      if (isVerbLesson && onBackToVerbs) {
+        onBackToVerbs();
+      } else {
+        onBackToLessons();
+      }
     });
   }
 
@@ -471,6 +516,8 @@ export function createStageController(container, { curriculum, onBackToLessons, 
     const pct = Math.round((completedCount / Math.max(1, session.items.length)) * 100);
     const showGuide = session.mode === 'guided' || session.hintedIndices.has(session.cursor);
     const grammar = getRelevantGrammar(session.lesson, curriculum);
+    const isVerbLesson =
+      session.lesson.sourceSection === 'verbs' || String(session.lesson.id || '').startsWith('verb');
 
     const englishMasked = session.mode === 'dictation' && !session.revealEnglishInDictation;
 
@@ -478,10 +525,10 @@ export function createStageController(container, { curriculum, onBackToLessons, 
       <div class="stage-wrap">
         <div class="stage-header">
           <div class="stage-title-group">
-            <button type="button" class="btn btn-secondary btn-sm" id="st-back-btn">← Lessons</button>
+            <button type="button" class="btn btn-secondary btn-sm" id="st-back-btn">${isVerbLesson ? '← Verbs' : '← Lessons'}</button>
             <div>
-              <h1 class="stage-lesson-title">Lesson ${escapeHtml(session.lesson.number)}: ${escapeHtml(session.lesson.title)}</h1>
-              <div class="stage-lesson-meta">${escapeHtml(session.lesson.frenchTitle || '')} · PDF ${escapeHtml(session.lesson.pages || '')}</div>
+              <h1 class="stage-lesson-title">${isVerbLesson ? '' : 'Lesson '}${escapeHtml(session.lesson.number)}: ${escapeHtml(session.lesson.title)}</h1>
+              <div class="stage-lesson-meta">${escapeHtml(session.lesson.frenchTitle || '')} · ${escapeHtml(session.lesson.pages || '')}</div>
             </div>
           </div>
 
@@ -673,8 +720,14 @@ export function createStageController(container, { curriculum, onBackToLessons, 
 
   function bindStageEvents() {
     container.querySelector('#st-back-btn')?.addEventListener('click', () => {
+      const isVerbLesson =
+        session?.lesson?.sourceSection === 'verbs' || String(session?.lesson?.id || '').startsWith('verb');
       stop();
-      onBackToLessons();
+      if (isVerbLesson && onBackToVerbs) {
+        onBackToVerbs();
+      } else {
+        onBackToLessons();
+      }
     });
 
     container.querySelectorAll('[data-mode]').forEach((btn) => {

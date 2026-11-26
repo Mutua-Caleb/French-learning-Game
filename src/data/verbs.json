@@ -1,0 +1,725 @@
+{
+  "meta": {
+    "title": "20 Most Widely Used French Verbs",
+    "source": "Preply French Verb Conjugation Guide",
+    "sourceUrl": "https://preply.com/en/blog/french-verbs-conjugation/"
+  },
+  "memoryHacks": [
+    {
+      "title": "1. Start with the Present",
+      "body": "Master Présent first — French uses one present form for both 'I speak' and 'I am speaking'. Regular -ER verbs all share one pattern (-e, -es, -e, -ons, -ez, -ent)."
+    },
+    {
+      "title": "2. Embrace the Big Irregulars",
+      "body": "Tackle être, avoir, aller, faire, pouvoir, vouloir, and prendre early. They appear in almost every French conversation and unlock compound tenses."
+    },
+    {
+      "title": "3. Passé Composé: Avoir vs Être",
+      "body": "Most verbs build the past with avoir (j'ai parlé, j'ai fait). Movement verbs like aller and venir use être (je suis allé, je suis venu) and agree with gender/number."
+    },
+    {
+      "title": "4. Passé Composé vs Imparfait",
+      "body": "Use passé composé for completed events (J'ai fait un gâteau) and imparfait for habits or ongoing background scenes (Ils allaient au parc tous les jours)."
+    }
+  ],
+  "verbs": [
+    {
+      "rank": 1,
+      "id": "etre",
+      "infinitive": "être",
+      "en": "to be",
+      "group": "irregular",
+      "aux": "avoir",
+      "tip": "One of the two essential irregular French verbs (with avoir). Also serves as the auxiliary verb in compound past tenses for movement verbs like aller and venir.",
+      "example": {
+        "id": "v_ex_etre",
+        "fr": "Ils sont devant le musée.",
+        "en": "They are in front of the museum.",
+        "tense": "Présent"
+      },
+      "conjugations": {
+        "present": ["Je suis", "Tu es", "Il est", "Nous sommes", "Vous êtes", "Ils sont"],
+        "passe_compose": ["J'ai été", "Tu as été", "Il a été", "Nous avons été", "Vous avez été", "Ils ont été"],
+        "imparfait": ["J'étais", "Tu étais", "Il était", "Nous étions", "Vous étiez", "Ils étaient"],
+        "futur": ["Je serai", "Tu seras", "Il sera", "Nous serons", "Vous serez", "Ils seront"]
+      },
+      "enForms": {
+        "present": ["I am", "you (sing.) are", "he is", "we are", "you (pl.) are", "they are"],
+        "passe_compose_je": "I was / I have been",
+        "imparfait_je": "I was / I used to be",
+        "futur_je": "I will be"
+      }
+    },
+    {
+      "rank": 2,
+      "id": "avoir",
+      "infinitive": "avoir",
+      "en": "to have",
+      "group": "irregular",
+      "aux": "avoir",
+      "tip": "Essential irregular verb and the main auxiliary verb for forming the passé composé (e.g. J'ai parlé = I spoke / I have spoken).",
+      "example": {
+        "id": "v_ex_avoir",
+        "fr": "Nous avons eu deux réunions hier.",
+        "en": "We had two meetings yesterday.",
+        "tense": "Passé composé"
+      },
+      "conjugations": {
+        "present": ["J'ai", "Tu as", "Il a", "Nous avons", "Vous avez", "Ils ont"],
+        "passe_compose": ["J'ai eu", "Tu as eu", "Il a eu", "Nous avons eu", "Vous avez eu", "Ils ont eu"],
+        "imparfait": ["J'avais", "Tu avais", "Il avait", "Nous avions", "Vous aviez", "Ils avaient"],
+        "futur": ["J'aurai", "Tu auras", "Il aura", "Nous aurons", "Vous aurez", "Ils auront"]
+      },
+      "enForms": {
+        "present": ["I have", "you (sing.) have", "he has", "we have", "you (pl.) have", "they have"],
+        "passe_compose_je": "I had / I have had",
+        "imparfait_je": "I had / I used to have",
+        "futur_je": "I will have"
+      }
+    },
+    {
+      "rank": 3,
+      "id": "aller",
+      "infinitive": "aller",
+      "en": "to go",
+      "group": "irregular",
+      "aux": "être",
+      "tip": "Highly irregular despite ending in -er. Uses être in passé composé, so the past participle agrees in gender and number (Je suis allé / allée, Ils sont allés).",
+      "example": {
+        "id": "v_ex_aller",
+        "fr": "Ils allaient au parc tous les jours.",
+        "en": "They went to the park every day.",
+        "tense": "Imparfait"
+      },
+      "conjugations": {
+        "present": ["Je vais", "Tu vas", "Il va", "Nous allons", "Vous allez", "Ils vont"],
+        "passe_compose": ["Je suis allé", "Tu es allé", "Il est allé", "Nous sommes allés", "Vous êtes allés", "Ils sont allés"],
+        "imparfait": ["J'allais", "Tu allais", "Il allait", "Nous allions", "Vous alliez", "Ils allaient"],
+        "futur": ["J'irai", "Tu iras", "Il ira", "Nous irons", "Vous irez", "Ils iront"]
+      },
+      "enForms": {
+        "present": ["I go / am going", "you (sing.) go", "he goes", "we go", "you (pl.) go", "they go"],
+        "passe_compose_je": "I went / I have gone",
+        "imparfait_je": "I was going / used to go",
+        "futur_je": "I will go"
+      }
+    },
+    {
+      "rank": 4,
+      "id": "parler",
+      "infinitive": "parler",
+      "en": "to speak / talk",
+      "group": "regular-er",
+      "aux": "avoir",
+      "tip": "The blueprint for all regular -ER verbs! Master parler's endings (-e, -es, -e, -ons, -ez, -ent) and you unlock thousands of French verbs.",
+      "example": {
+        "id": "v_ex_parler",
+        "fr": "Tu parles si bien français!",
+        "en": "You speak French so well!",
+        "tense": "Présent"
+      },
+      "conjugations": {
+        "present": ["Je parle", "Tu parles", "Il parle", "Nous parlons", "Vous parlez", "Ils parlent"],
+        "passe_compose": ["J'ai parlé", "Tu as parlé", "Il a parlé", "Nous avons parlé", "Vous avez parlé", "Ils ont parlé"],
+        "imparfait": ["Je parlais", "Tu parlais", "Il parlait", "Nous parlions", "Vous parliez", "Ils parlaient"],
+        "futur": ["Je parlerai", "Tu parleras", "Il parlera", "Nous parlerons", "Vous parlerez", "Ils parleront"]
+      },
+      "enForms": {
+        "present": ["I speak", "you (sing.) speak", "he speaks", "we speak", "you (pl.) speak", "they speak"],
+        "passe_compose_je": "I spoke / have spoken",
+        "imparfait_je": "I was speaking / used to speak",
+        "futur_je": "I will speak"
+      }
+    },
+    {
+      "rank": 5,
+      "id": "faire",
+      "infinitive": "faire",
+      "en": "to do / make",
+      "group": "irregular",
+      "aux": "avoir",
+      "tip": "Used everywhere — from cooking to weather (Il fait froid = It's cold) and hobbies (Nous faisons du ballet). Watch the irregular vous form: vous faites!",
+      "example": {
+        "id": "v_ex_faire",
+        "fr": "Je fais le gâteau pour son anniversaire.",
+        "en": "I'm making the cake for her birthday.",
+        "tense": "Présent"
+      },
+      "conjugations": {
+        "present": ["Je fais", "Tu fais", "Il fait", "Nous faisons", "Vous faites", "Ils font"],
+        "passe_compose": ["J'ai fait", "Tu as fait", "Il a fait", "Nous avons fait", "Vous avez fait", "Ils ont fait"],
+        "imparfait": ["Je faisais", "Tu faisais", "Il faisait", "Nous faisions", "Vous faisiez", "Ils faisaient"],
+        "futur": ["Je ferai", "Tu feras", "Il fera", "Nous ferons", "Vous ferez", "Ils feront"]
+      },
+      "enForms": {
+        "present": ["I do / make", "you (sing.) do / make", "he does / makes", "we do / make", "you (pl.) do / make", "they do / make"],
+        "passe_compose_je": "I did / made",
+        "imparfait_je": "I was doing / used to do",
+        "futur_je": "I will do / make"
+      }
+    },
+    {
+      "rank": 6,
+      "id": "prendre",
+      "infinitive": "prendre",
+      "en": "to take",
+      "group": "irregular",
+      "aux": "avoir",
+      "tip": "Drop the 'd' in the plural forms (nous prenons, vous prenez, ils prennent with double 'n'). Used in idioms like prendre son temps (to take one's time).",
+      "example": {
+        "id": "v_ex_prendre",
+        "fr": "Ils ont pris ses bagages par accident!",
+        "en": "They took her luggage by accident!",
+        "tense": "Passé composé"
+      },
+      "conjugations": {
+        "present": ["Je prends", "Tu prends", "Il prend", "Nous prenons", "Vous prenez", "Ils prennent"],
+        "passe_compose": ["J'ai pris", "Tu as pris", "Il a pris", "Nous avons pris", "Vous avez pris", "Ils ont pris"],
+        "imparfait": ["Je prenais", "Tu prenais", "Il prenait", "Nous prenions", "Vous preniez", "Ils prenaient"],
+        "futur": ["Je prendrai", "Tu prendras", "Il prendra", "Nous prendrons", "Vous prendrez", "Ils prendront"]
+      },
+      "enForms": {
+        "present": ["I take", "you (sing.) take", "he takes", "we take", "you (pl.) take", "they take"],
+        "passe_compose_je": "I took / have taken",
+        "imparfait_je": "I was taking / used to take",
+        "futur_je": "I will take"
+      }
+    },
+    {
+      "rank": 7,
+      "id": "vouloir",
+      "infinitive": "vouloir",
+      "en": "to want",
+      "group": "irregular",
+      "aux": "avoir",
+      "tip": "Expresses desires (Je veux devenir astronaute!) or polite requests (Voulez-vous une salade?). Notice the -x endings on je veux and tu veux.",
+      "example": {
+        "id": "v_ex_vouloir",
+        "fr": "Voulez-vous une salade avec votre repas?",
+        "en": "Do you want a salad with your meal?",
+        "tense": "Présent"
+      },
+      "conjugations": {
+        "present": ["Je veux", "Tu veux", "Il veut", "Nous voulons", "Vous voulez", "Ils veulent"],
+        "passe_compose": ["J'ai voulu", "Tu as voulu", "Il a voulu", "Nous avons voulu", "Vous avez voulu", "Ils ont voulu"],
+        "imparfait": ["Je voulais", "Tu voulais", "Il voulait", "Nous voulions", "Vous vouliez", "Ils voulaient"],
+        "futur": ["Je voudrai", "Tu voudras", "Il voudra", "Nous voudrons", "Vous voudrez", "Ils voudront"]
+      },
+      "enForms": {
+        "present": ["I want", "you (sing.) want", "he wants", "we want", "you (pl.) want", "they want"],
+        "passe_compose_je": "I wanted / have wanted",
+        "imparfait_je": "I wanted / used to want",
+        "futur_je": "I will want"
+      }
+    },
+    {
+      "rank": 8,
+      "id": "savoir",
+      "infinitive": "savoir",
+      "en": "to know (a fact / how to)",
+      "group": "irregular",
+      "aux": "avoir",
+      "tip": "Irregular -oir verb used for knowing facts or skills (je sais, tu sais, il sait). Its future stem is saur- (je saurai).",
+      "example": {
+        "id": "v_ex_savoir",
+        "fr": "Nous savions que cela arriverait.",
+        "en": "We knew this would happen.",
+        "tense": "Imparfait"
+      },
+      "conjugations": {
+        "present": ["Je sais", "Tu sais", "Il sait", "Nous savons", "Vous savez", "Ils savent"],
+        "passe_compose": ["J'ai su", "Tu as su", "Il a su", "Nous avons su", "Vous avez su", "Ils ont su"],
+        "imparfait": ["Je savais", "Tu savais", "Il savait", "Nous savions", "Vous saviez", "Ils savaient"],
+        "futur": ["Je saurai", "Tu sauras", "Il saura", "Nous saurons", "Vous saurez", "Ils sauront"]
+      },
+      "enForms": {
+        "present": ["I know", "you (sing.) know", "he knows", "we know", "you (pl.) know", "they know"],
+        "passe_compose_je": "I found out / knew",
+        "imparfait_je": "I knew / used to know",
+        "futur_je": "I will know"
+      }
+    },
+    {
+      "rank": 9,
+      "id": "pouvoir",
+      "infinitive": "pouvoir",
+      "en": "to be able to / can",
+      "group": "irregular",
+      "aux": "avoir",
+      "tip": "Vital for polite requests and offers (Peux-tu m'aider?). Double 'r' in the future tense: je pourrai.",
+      "example": {
+        "id": "v_ex_pouvoir",
+        "fr": "Peux-tu préparer le dîner de ce soir?",
+        "en": "Can you cook dinner tonight?",
+        "tense": "Présent"
+      },
+      "conjugations": {
+        "present": ["Je peux", "Tu peux", "Il peut", "Nous pouvons", "Vous pouvez", "Ils peuvent"],
+        "passe_compose": ["J'ai pu", "Tu as pu", "Il a pu", "Nous avons pu", "Vous avez pu", "Ils ont pu"],
+        "imparfait": ["Je pouvais", "Tu pouvais", "Il pouvait", "Nous pouvions", "Vous pouviez", "Ils pouvaient"],
+        "futur": ["Je pourrai", "Tu pourras", "Il pourra", "Nous pourrons", "Vous pourrez", "Ils pourront"]
+      },
+      "enForms": {
+        "present": ["I can / am able to", "you (sing.) can", "he can", "we can", "you (pl.) can", "they can"],
+        "passe_compose_je": "I was able to / could",
+        "imparfait_je": "I could / used to be able to",
+        "futur_je": "I will be able to"
+      }
+    },
+    {
+      "rank": 10,
+      "id": "venir",
+      "infinitive": "venir",
+      "en": "to come",
+      "group": "irregular",
+      "aux": "être",
+      "tip": "Uses être in passé composé (je suis venu). 'Venir de' + place means 'come from'; 'venir de' + infinitive means 'have just done' (Elle vient de terminer).",
+      "example": {
+        "id": "v_ex_venir",
+        "fr": "Tu viens demain?",
+        "en": "Are you coming tomorrow?",
+        "tense": "Présent"
+      },
+      "conjugations": {
+        "present": ["Je viens", "Tu viens", "Il vient", "Nous venons", "Vous venez", "Ils viennent"],
+        "passe_compose": ["Je suis venu", "Tu es venu", "Il est venu", "Nous sommes venus", "Vous êtes venus", "Ils sont venus"],
+        "imparfait": ["Je venais", "Tu venais", "Il venait", "Nous venions", "Vous veniez", "Ils venaient"],
+        "futur": ["Je viendrai", "Tu viendras", "Il viendra", "Nous viendrons", "Vous viendrez", "Ils viendront"]
+      },
+      "enForms": {
+        "present": ["I come", "you (sing.) come", "he comes", "we come", "you (pl.) come", "they come"],
+        "passe_compose_je": "I came / have come",
+        "imparfait_je": "I was coming / used to come",
+        "futur_je": "I will come"
+      }
+    },
+    {
+      "rank": 11,
+      "id": "dire",
+      "infinitive": "dire",
+      "en": "to say / tell",
+      "group": "irregular",
+      "aux": "avoir",
+      "tip": "Unique irregular pattern — pay special attention to 'vous dites' (not disez!). Past participle is 'dit'.",
+      "example": {
+        "id": "v_ex_dire",
+        "fr": "Il a dit la vérité à tout le monde.",
+        "en": "He told everyone the truth.",
+        "tense": "Passé composé"
+      },
+      "conjugations": {
+        "present": ["Je dis", "Tu dis", "Il dit", "Nous disons", "Vous dites", "Ils disent"],
+        "passe_compose": ["J'ai dit", "Tu as dit", "Il a dit", "Nous avons dit", "Vous avez dit", "Ils ont dit"],
+        "imparfait": ["Je disais", "Tu disais", "Il disait", "Nous disions", "Vous disiez", "Ils disaient"],
+        "futur": ["Je dirai", "Tu diras", "Il dira", "Nous dirons", "Vous direz", "Ils diront"]
+      },
+      "enForms": {
+        "present": ["I say / tell", "you (sing.) say / tell", "he says / tells", "we say / tell", "you (pl.) say / tell", "they say / tell"],
+        "passe_compose_je": "I said / told",
+        "imparfait_je": "I was saying / used to say",
+        "futur_je": "I will say / tell"
+      }
+    },
+    {
+      "rank": 12,
+      "id": "donner",
+      "infinitive": "donner",
+      "en": "to give",
+      "group": "regular-er",
+      "aux": "avoir",
+      "tip": "Regular -ER verb used in everyday idioms like 'donner l'exemple' (set an example) and 'donner une fête' (throw a party).",
+      "example": {
+        "id": "v_ex_donner",
+        "fr": "Non, elle ne lui a pas donné ses livres.",
+        "en": "No, she didn't give him her books.",
+        "tense": "Passé composé"
+      },
+      "conjugations": {
+        "present": ["Je donne", "Tu donnes", "Il donne", "Nous donnons", "Vous donnez", "Ils donnent"],
+        "passe_compose": ["J'ai donné", "Tu as donné", "Il a donné", "Nous avons donné", "Vous avez donné", "Ils ont donné"],
+        "imparfait": ["Je donnais", "Tu donnais", "Il donnait", "Nous donnions", "Vous donniez", "Ils donnaient"],
+        "futur": ["Je donnerai", "Tu donneras", "Il donnera", "Nous donnerons", "Vous donnerez", "Ils donneront"]
+      },
+      "enForms": {
+        "present": ["I give", "you (sing.) give", "he gives", "we give", "you (pl.) give", "they give"],
+        "passe_compose_je": "I gave / have given",
+        "imparfait_je": "I was giving / used to give",
+        "futur_je": "I will give"
+      }
+    },
+    {
+      "rank": 13,
+      "id": "penser",
+      "infinitive": "penser",
+      "en": "to think",
+      "group": "regular-er",
+      "aux": "avoir",
+      "tip": "'Penser à' means to have someone/something on your mind (Tu penses à elle?). 'Penser de' asks for an opinion (Que pensez-vous de cet hôtel?).",
+      "example": {
+        "id": "v_ex_penser",
+        "fr": "Ils y penseront plus tard.",
+        "en": "They will think about it later.",
+        "tense": "Futur simple"
+      },
+      "conjugations": {
+        "present": ["Je pense", "Tu penses", "Il pense", "Nous pensons", "Vous pensez", "Ils pensent"],
+        "passe_compose": ["J'ai pensé", "Tu as pensé", "Il a pensé", "Nous avons pensé", "Vous avez pensé", "Ils ont pensé"],
+        "imparfait": ["Je pensais", "Tu pensais", "Il pensait", "Nous pensions", "Vous pensiez", "Ils pensaient"],
+        "futur": ["Je penserai", "Tu penseras", "Il pensera", "Nous penserons", "Vous penserez", "Ils penseront"]
+      },
+      "enForms": {
+        "present": ["I think", "you (sing.) think", "he thinks", "we think", "you (pl.) think", "they think"],
+        "passe_compose_je": "I thought / have thought",
+        "imparfait_je": "I was thinking / used to think",
+        "futur_je": "I will think"
+      }
+    },
+    {
+      "rank": 14,
+      "id": "aider",
+      "infinitive": "aider",
+      "en": "to help",
+      "group": "regular-er",
+      "aux": "avoir",
+      "tip": "Regular -ER verb starting with a vowel, so 'je' shortens to j' (j'aide, j'aidais, j'aiderai). Followed by 'à' before an infinitive.",
+      "example": {
+        "id": "v_ex_aider",
+        "fr": "Elle les aidera à déménager.",
+        "en": "She will help them move apartments.",
+        "tense": "Futur simple"
+      },
+      "conjugations": {
+        "present": ["J'aide", "Tu aides", "Il aide", "Nous aidons", "Vous aidez", "Ils aident"],
+        "passe_compose": ["J'ai aidé", "Tu as aidé", "Il a aidé", "Nous avons aidé", "Vous avez aidé", "Ils ont aidé"],
+        "imparfait": ["J'aidais", "Tu aidais", "Il aidait", "Nous aidions", "Vous aidiez", "Ils aidaient"],
+        "futur": ["J'aiderai", "Tu aideras", "Il aidera", "Nous aiderons", "Vous aiderez", "Ils aideront"]
+      },
+      "enForms": {
+        "present": ["I help", "you (sing.) help", "he helps", "we help", "you (pl.) help", "they help"],
+        "passe_compose_je": "I helped / have helped",
+        "imparfait_je": "I was helping / used to help",
+        "futur_je": "I will help"
+      }
+    },
+    {
+      "rank": 15,
+      "id": "aimer",
+      "infinitive": "aimer",
+      "en": "to like / love",
+      "group": "regular-er",
+      "aux": "avoir",
+      "tip": "Regular -ER verb used for liking things/activities (J'aime le français) or loving people. Starts with a vowel so 'je' becomes j'.",
+      "example": {
+        "id": "v_ex_aimer",
+        "fr": "Ils aimaient jouer ensemble quand ils étaient enfants.",
+        "en": "They used to love playing together when they were children.",
+        "tense": "Imparfait"
+      },
+      "conjugations": {
+        "present": ["J'aime", "Tu aimes", "Il aime", "Nous aimons", "Vous aimez", "Ils aiment"],
+        "passe_compose": ["J'ai aimé", "Tu as aimé", "Il a aimé", "Nous avons aimé", "Vous avez aimé", "Ils ont aimé"],
+        "imparfait": ["J'aimais", "Tu aimais", "Il aimait", "Nous aimions", "Vous aimiez", "Ils aimaient"],
+        "futur": ["J'aimerai", "Tu aimeras", "Il aimera", "Nous aimerons", "Vous aimerez", "Ils aimeront"]
+      },
+      "enForms": {
+        "present": ["I like / love", "you (sing.) like / love", "he likes / loves", "we like / love", "you (pl.) like / love", "they like / love"],
+        "passe_compose_je": "I liked / loved",
+        "imparfait_je": "I used to like / love",
+        "futur_je": "I will like / love"
+      }
+    },
+    {
+      "rank": 16,
+      "id": "devoir",
+      "infinitive": "devoir",
+      "en": "to have to / must / need to",
+      "group": "irregular",
+      "aux": "avoir",
+      "tip": "Expresses personal obligation (Je dois partir), whereas 'il faut' expresses general necessity. Notice the circumflex on 'dû' in passé composé!",
+      "example": {
+        "id": "v_ex_devoir",
+        "fr": "Vous devez boire plus d'eau.",
+        "en": "You need to drink more water.",
+        "tense": "Présent"
+      },
+      "conjugations": {
+        "present": ["Je dois", "Tu dois", "Il doit", "Nous devons", "Vous devez", "Ils doivent"],
+        "passe_compose": ["J'ai dû", "Tu as dû", "Il a dû", "Nous avons dû", "Vous avez dû", "Ils ont dû"],
+        "imparfait": ["Je devais", "Tu devais", "Il devait", "Nous devions", "Vous deviez", "Ils devaient"],
+        "futur": ["Je devrai", "Tu devras", "Il devra", "Nous devrons", "Vous devrez", "Ils devront"]
+      },
+      "enForms": {
+        "present": ["I must / have to", "you (sing.) must", "he must", "we must", "you (pl.) must", "they must"],
+        "passe_compose_je": "I had to",
+        "imparfait_je": "I had to / was supposed to",
+        "futur_je": "I will have to"
+      }
+    },
+    {
+      "rank": 17,
+      "id": "habiter",
+      "infinitive": "habiter",
+      "en": "to live (reside)",
+      "group": "regular-er",
+      "aux": "avoir",
+      "tip": "Regular -ER verb with a silent 'h' (j'habite). Usually paired with a preposition like à or en (J'habite à Paris, Elle habitera en Allemagne).",
+      "example": {
+        "id": "v_ex_habiter",
+        "fr": "Elle habitera en Allemagne l'année prochaine.",
+        "en": "She will live in Germany next year.",
+        "tense": "Futur simple"
+      },
+      "conjugations": {
+        "present": ["J'habite", "Tu habites", "Il habite", "Nous habitons", "Vous habitez", "Ils habitent"],
+        "passe_compose": ["J'ai habité", "Tu as habité", "Il a habité", "Nous avons habité", "Vous avez habité", "Ils ont habité"],
+        "imparfait": ["J'habitais", "Tu habitais", "Il habitait", "Nous habitions", "Vous habitiez", "Ils habitaient"],
+        "futur": ["J'habiterai", "Tu habiteras", "Il habitera", "Nous habiterons", "Vous habiterez", "Ils habiteront"]
+      },
+      "enForms": {
+        "present": ["I live", "you (sing.) live", "he lives", "we live", "you (pl.) live", "they live"],
+        "passe_compose_je": "I lived / have lived",
+        "imparfait_je": "I used to live",
+        "futur_je": "I will live"
+      }
+    },
+    {
+      "rank": 18,
+      "id": "regarder",
+      "infinitive": "regarder",
+      "en": "to look at / watch",
+      "group": "regular-er",
+      "aux": "avoir",
+      "tip": "Active, intentional watching (regarder la télé), unlike passive 'voir' (to happen to see). Needs no 'at' preposition in French.",
+      "example": {
+        "id": "v_ex_regarder",
+        "fr": "J'ai regardé les oiseaux dans la forêt.",
+        "en": "I watched the birds in the forest.",
+        "tense": "Passé composé"
+      },
+      "conjugations": {
+        "present": ["Je regarde", "Tu regardes", "Il regarde", "Nous regardons", "Vous regardez", "Ils regardent"],
+        "passe_compose": ["J'ai regardé", "Tu as regardé", "Il a regardé", "Nous avons regardé", "Vous avez regardé", "Ils ont regardé"],
+        "imparfait": ["Je regardais", "Tu regardais", "Il regardait", "Nous regardions", "Vous regardiez", "Ils regardaient"],
+        "futur": ["Je regarderai", "Tu regarderas", "Il regardera", "Nous regarderons", "Vous regarderez", "Ils regarderont"]
+      },
+      "enForms": {
+        "present": ["I watch / look at", "you (sing.) watch", "he watches", "we watch", "you (pl.) watch", "they watch"],
+        "passe_compose_je": "I watched / looked at",
+        "imparfait_je": "I was watching / used to watch",
+        "futur_je": "I will watch"
+      }
+    },
+    {
+      "rank": 19,
+      "id": "utiliser",
+      "infinitive": "utiliser",
+      "en": "to use",
+      "group": "regular-er",
+      "aux": "avoir",
+      "tip": "Regular -ER verb following the exact same pattern as parler, aimer, and aider. Starts with a vowel, so 'je' becomes j'.",
+      "example": {
+        "id": "v_ex_utiliser",
+        "fr": "Avez-vous déjà utilisé cet ordinateur?",
+        "en": "Have you used this computer before?",
+        "tense": "Passé composé"
+      },
+      "conjugations": {
+        "present": ["J'utilise", "Tu utilises", "Il utilise", "Nous utilisons", "Vous utilisez", "Ils utilisent"],
+        "passe_compose": ["J'ai utilisé", "Tu as utilisé", "Il a utilisé", "Nous avons utilisé", "Vous avez utilisé", "Ils ont utilisé"],
+        "imparfait": ["J'utilisais", "Tu utilisais", "Il utilisait", "Nous utilisions", "Vous utilisiez", "Ils utilisaient"],
+        "futur": ["J'utiliserai", "Tu utiliseras", "Il utilisera", "Nous utiliserons", "Vous utiliserez", "Ils utiliseront"]
+      },
+      "enForms": {
+        "present": ["I use", "you (sing.) use", "he uses", "we use", "you (pl.) use", "they use"],
+        "passe_compose_je": "I used / have used",
+        "imparfait_je": "I was using / used to use",
+        "futur_je": "I will use"
+      }
+    },
+    {
+      "rank": 20,
+      "id": "essayer",
+      "infinitive": "essayer",
+      "en": "to try",
+      "group": "regular-er",
+      "aux": "avoir",
+      "tip": "With -ayer verbs like essayer, 'y' can optionally change to 'i' before silent endings (both j'essaie and j'essaye are correct!).",
+      "example": {
+        "id": "v_ex_essayer",
+        "fr": "Ils ont essayé de prendre l'avion.",
+        "en": "They tried to take the plane.",
+        "tense": "Passé composé"
+      },
+      "conjugations": {
+        "present": ["J'essaie", "Tu essaies", "Il essaie", "Nous essayons", "Vous essayez", "Ils essaient"],
+        "passe_compose": ["J'ai essayé", "Tu as essayé", "Il a essayé", "Nous avons essayé", "Vous avez essayé", "Ils ont essayé"],
+        "imparfait": ["J'essayais", "Tu essayais", "Il essayait", "Nous essayions", "Vous essayiez", "Ils essayaient"],
+        "futur": ["J'essaierai", "Tu essaieras", "Il essaiera", "Nous essaierons", "Vous essaierez", "Ils essaieront"]
+      },
+      "enForms": {
+        "present": ["I try", "you (sing.) try", "he tries", "we try", "you (pl.) try", "they try"],
+        "passe_compose_je": "I tried / have tried",
+        "imparfait_je": "I was trying / used to try",
+        "futur_je": "I will try"
+      }
+    }
+  ],
+  "tracks": [
+    {
+      "id": "verbs-t1",
+      "number": "V1",
+      "title": "The Big 4 Power Verbs",
+      "frenchTitle": "Être, Avoir, Aller, Faire (Présent)",
+      "pages": "Verbs 1–3, 5",
+      "focus": "High-Impact Irregulars",
+      "description": "Start here! Master the 4 most important irregular French verbs in the present tense plus everyday idioms.",
+      "items": [
+        { "id": "v_etre_pr_0", "en": "I am (être)", "fr": "Je suis", "type": "phrase", "tag": "être · Présent", "hint": "Core irregular verb — to be." },
+        { "id": "v_etre_pr_3", "en": "we are (être)", "fr": "Nous sommes", "type": "phrase", "tag": "être · Présent", "hint": "Irregular plural of être." },
+        { "id": "v_etre_pr_4", "en": "you (pl./polite) are (être)", "fr": "Vous êtes", "type": "phrase", "tag": "être · Présent", "hint": "Circumflex accent on ê in êtes." },
+        { "id": "v_avoir_pr_0", "en": "I have (avoir)", "fr": "J'ai", "type": "phrase", "tag": "avoir · Présent", "hint": "'Je' contracts to j' before a vowel." },
+        { "id": "v_avoir_pr_3", "en": "we have (avoir)", "fr": "Nous avons", "type": "phrase", "tag": "avoir · Présent", "hint": "Core auxiliary verb for past tense." },
+        { "id": "v_avoir_pr_5", "en": "they have (avoir)", "fr": "Ils ont", "type": "phrase", "tag": "avoir · Présent", "hint": "Don't mix up 'ils ont' (have) with 'ils sont' (are)!" },
+        { "id": "v_aller_pr_0", "en": "I go / I am going (aller)", "fr": "Je vais", "type": "phrase", "tag": "aller · Présent", "hint": "Aller is completely irregular in present tense." },
+        { "id": "v_aller_pr_2", "en": "he goes (aller)", "fr": "Il va", "type": "phrase", "tag": "aller · Présent", "hint": "Also used in 'Ça va?' (How's it going?)." },
+        { "id": "v_aller_pr_3", "en": "we go (aller)", "fr": "Nous allons", "type": "phrase", "tag": "aller · Présent", "hint": "Notice the stem returns to all- for nous/vous." },
+        { "id": "v_aller_pr_5", "en": "they go (aller)", "fr": "Ils vont", "type": "phrase", "tag": "aller · Présent", "hint": "Rhymes with 'ils ont' and 'ils sont'." },
+        { "id": "v_faire_pr_0", "en": "I do / I make (faire)", "fr": "Je fais", "type": "phrase", "tag": "faire · Présent", "hint": "One French present covers 'I make' and 'I am making'." },
+        { "id": "v_faire_pr_4", "en": "you (pl.) do / make (faire)", "fr": "Vous faites", "type": "phrase", "tag": "faire · Présent", "hint": "Watch out! Irregular 'vous faites', not faisez." },
+        { "id": "v_faire_pr_5", "en": "they do / make (faire)", "fr": "Ils font", "type": "phrase", "tag": "faire · Présent", "hint": "Joins sont / ont / vont / font." },
+        { "id": "v_ex_il_fait_froid", "en": "It's cold. (weather idiom)", "fr": "Il fait froid.", "type": "sentence", "tag": "faire idiom", "hint": "French uses 'faire' instead of 'to be' for weather!" },
+        { "id": "v_ex_etre", "en": "They are in front of the museum.", "fr": "Ils sont devant le musée.", "type": "sentence", "tag": "être example", "hint": "Preply example sentence for être." },
+        { "id": "v_ex_faire", "en": "I'm making the cake for her birthday.", "fr": "Je fais le gâteau pour son anniversaire.", "type": "sentence", "tag": "faire example", "hint": "Circumflex accent on â in gâteau." }
+      ]
+    },
+    {
+      "id": "verbs-t2",
+      "number": "V2",
+      "title": "Essential Daily Irregulars",
+      "frenchTitle": "Vouloir, Pouvoir, Devoir, Savoir, Prendre, Venir, Dire",
+      "pages": "Verbs 6–11, 16",
+      "focus": "Core Irregulars",
+      "description": "Type the 7 everyday irregular verbs that let you express wants, ability, necessity, knowing, taking, coming, and saying.",
+      "items": [
+        { "id": "v_vouloir_pr_0", "en": "I want (vouloir)", "fr": "Je veux", "type": "phrase", "tag": "vouloir · Présent", "hint": "Ends in -x for je and tu." },
+        { "id": "v_vouloir_pr_4", "en": "you (pl./polite) want (vouloir)", "fr": "Vous voulez", "type": "phrase", "tag": "vouloir · Présent", "hint": "Great for polite offers: Voulez-vous...?" },
+        { "id": "v_pouvoir_pr_0", "en": "I can / am able to (pouvoir)", "fr": "Je peux", "type": "phrase", "tag": "pouvoir · Présent", "hint": "Ends in -x like je veux." },
+        { "id": "v_pouvoir_pr_3", "en": "we can (pouvoir)", "fr": "Nous pouvons", "type": "phrase", "tag": "pouvoir · Présent", "hint": "Stem shifts to pouv- in nous/vous." },
+        { "id": "v_devoir_pr_0", "en": "I must / have to (devoir)", "fr": "Je dois", "type": "phrase", "tag": "devoir · Présent", "hint": "Personal obligation (vs general 'il faut')." },
+        { "id": "v_devoir_pr_4", "en": "you (pl.) must / need to (devoir)", "fr": "Vous devez", "type": "phrase", "tag": "devoir · Présent", "hint": "Used in 'Vous devez boire plus d'eau.'" },
+        { "id": "v_savoir_pr_0", "en": "I know (savoir)", "fr": "Je sais", "type": "phrase", "tag": "savoir · Présent", "hint": "Used for knowing facts or how to do something." },
+        { "id": "v_savoir_pr_3", "en": "we know (savoir)", "fr": "Nous savons", "type": "phrase", "tag": "savoir · Présent", "hint": "Stem sav- for nous/vous/ils." },
+        { "id": "v_prendre_pr_0", "en": "I take (prendre)", "fr": "Je prends", "type": "phrase", "tag": "prendre · Présent", "hint": "Keeps 'd' in singular (je prends, il prend)." },
+        { "id": "v_prendre_pr_5", "en": "they take (prendre)", "fr": "Ils prennent", "type": "phrase", "tag": "prendre · Présent", "hint": "Drops 'd' and doubles the 'n' for ils/elles!" },
+        { "id": "v_venir_pr_0", "en": "I come (venir)", "fr": "Je viens", "type": "phrase", "tag": "venir · Présent", "hint": "'Venir de' = come from / have just done." },
+        { "id": "v_venir_pr_5", "en": "they come (venir)", "fr": "Ils viennent", "type": "phrase", "tag": "venir · Présent", "hint": "Double 'n' in ils viennent." },
+        { "id": "v_dire_pr_0", "en": "I say / tell (dire)", "fr": "Je dis", "type": "phrase", "tag": "dire · Présent", "hint": "Short irregular stem di-." },
+        { "id": "v_dire_pr_4", "en": "you (pl.) say / tell (dire)", "fr": "Vous dites", "type": "phrase", "tag": "dire · Présent", "hint": "Famous irregular form: 'vous dites' (not disez)!" },
+        { "id": "v_ex_vouloir", "en": "Do you want a salad with your meal?", "fr": "Voulez-vous une salade avec votre repas?", "type": "sentence", "tag": "vouloir example", "hint": "Polite inversion with Voulez-vous." },
+        { "id": "v_ex_devoir", "en": "You need to drink more water.", "fr": "Vous devez boire plus d'eau.", "type": "sentence", "tag": "devoir example", "hint": "Devoir + infinitive (boire = to drink)." }
+      ]
+    },
+    {
+      "id": "verbs-t3",
+      "number": "V3",
+      "title": "Regular -ER Verb Blueprint",
+      "frenchTitle": "Parler, Donner, Penser, Aider, Aimer, Habiter, Regarder, Utiliser, Essayer",
+      "pages": "Verbs 4, 12–15, 17–20",
+      "focus": "1 Pattern = 9 Verbs",
+      "description": "Drill all 9 high-frequency -ER verbs in the Preply list so the -e, -es, -e, -ons, -ez, -ent pattern becomes automatic.",
+      "items": [
+        { "id": "v_parler_pr_0", "en": "I speak (parler)", "fr": "Je parle", "type": "phrase", "tag": "-ER · je (-e)", "hint": "Drop -er and add -e." },
+        { "id": "v_parler_pr_1", "en": "you (sing.) speak (parler)", "fr": "Tu parles", "type": "phrase", "tag": "-ER · tu (-es)", "hint": "Tu always takes -es." },
+        { "id": "v_donner_pr_3", "en": "we give (donner)", "fr": "Nous donnons", "type": "phrase", "tag": "-ER · nous (-ons)", "hint": "Nous always takes -ons." },
+        { "id": "v_penser_pr_0", "en": "I think (penser)", "fr": "Je pense", "type": "phrase", "tag": "-ER · je (-e)", "hint": "Penser à = think of; penser de = have an opinion." },
+        { "id": "v_penser_pr_4", "en": "you (pl.) think (penser)", "fr": "Vous pensez", "type": "phrase", "tag": "-ER · vous (-ez)", "hint": "Vous always takes -ez." },
+        { "id": "v_aider_pr_0", "en": "I help (aider)", "fr": "J'aide", "type": "phrase", "tag": "-ER · j' (-e)", "hint": "'Je' becomes j' before a vowel." },
+        { "id": "v_aider_pr_3", "en": "we help (aider)", "fr": "Nous aidons", "type": "phrase", "tag": "-ER · nous (-ons)", "hint": "Regular -ER pattern." },
+        { "id": "v_aimer_pr_0", "en": "I like / love (aimer)", "fr": "J'aime", "type": "phrase", "tag": "-ER · j' (-e)", "hint": "Regular -ER pattern." },
+        { "id": "v_habiter_pr_0", "en": "I live (habiter)", "fr": "J'habite", "type": "phrase", "tag": "-ER · silent h", "hint": "Silent 'h' triggers j'habite." },
+        { "id": "v_regarder_pr_5", "en": "they watch (regarder)", "fr": "Ils regardent", "type": "phrase", "tag": "-ER · ils (-ent)", "hint": "The -ent ending is silent!" },
+        { "id": "v_utiliser_pr_0", "en": "I use (utiliser)", "fr": "J'utilise", "type": "phrase", "tag": "-ER · j' (-e)", "hint": "Regular -ER verb." },
+        { "id": "v_utiliser_pr_4", "en": "you (pl.) use (utiliser)", "fr": "Vous utilisez", "type": "phrase", "tag": "-ER · vous (-ez)", "hint": "Regular -ER pattern." },
+        { "id": "v_essayer_pr_0", "en": "I try (essayer)", "fr": "J'essaie", "type": "phrase", "tag": "-ayer verb", "hint": "In essayer, 'y' shifts to 'i' (j'essaie / j'essaye)." },
+        { "id": "v_essayer_pr_3", "en": "we try (essayer)", "fr": "Nous essayons", "type": "phrase", "tag": "-ayer verb", "hint": "Keeps 'y' for nous and vous." },
+        { "id": "v_ex_parler", "en": "You speak French so well!", "fr": "Tu parles si bien français!", "type": "sentence", "tag": "parler example", "hint": "Cedilla in français." },
+        { "id": "v_ex_penser_a", "en": "You are thinking of her, aren't you?", "fr": "Tu penses à elle, n'est-ce pas?", "type": "sentence", "tag": "penser à", "hint": "'Penser à' = to have someone on your mind." }
+      ]
+    },
+    {
+      "id": "verbs-t4",
+      "number": "V4",
+      "title": "Past Tense: Passé Composé",
+      "frenchTitle": "Avoir & Être au passé composé",
+      "pages": "All 20 Verbs · Past",
+      "focus": "Completed Past",
+      "description": "Learn how to talk about completed past actions — mastering key past participles (été, eu, fait, pris, dit, pu, dû) and être verbs (allé, venu).",
+      "items": [
+        { "id": "v_etre_pc_0", "en": "I was / I have been (être)", "fr": "J'ai été", "type": "phrase", "tag": "Passé composé", "hint": "Être uses avoir as its own auxiliary: J'ai été." },
+        { "id": "v_avoir_pc_0", "en": "I had / I have had (avoir)", "fr": "J'ai eu", "type": "phrase", "tag": "Passé composé", "hint": "Past participle of avoir is 'eu' (pronounced 'u')." },
+        { "id": "v_aller_pc_0", "en": "I went (aller)", "fr": "Je suis allé", "type": "phrase", "tag": "Être auxiliary!", "hint": "Aller is a movement verb → uses être (allée if feminine)." },
+        { "id": "v_venir_pc_0", "en": "I came (venir)", "fr": "Je suis venu", "type": "phrase", "tag": "Être auxiliary!", "hint": "Venir uses être in the past tense (venue if feminine)." },
+        { "id": "v_parler_pc_0", "en": "I spoke (parler)", "fr": "J'ai parlé", "type": "phrase", "tag": "-ER past (-é)", "hint": "All regular -ER verbs form past participles with -é!" },
+        { "id": "v_faire_pc_0", "en": "I did / made (faire)", "fr": "J'ai fait", "type": "phrase", "tag": "Irregular past", "hint": "Past participle of faire is 'fait'." },
+        { "id": "v_prendre_pc_0", "en": "I took (prendre)", "fr": "J'ai pris", "type": "phrase", "tag": "Irregular past", "hint": "Past participle of prendre is 'pris'." },
+        { "id": "v_vouloir_pc_0", "en": "I wanted (vouloir)", "fr": "J'ai voulu", "type": "phrase", "tag": "Irregular past", "hint": "Past participle of vouloir is 'voulu'." },
+        { "id": "v_pouvoir_pc_0", "en": "I was able to (pouvoir)", "fr": "J'ai pu", "type": "phrase", "tag": "Irregular past", "hint": "Short past participle: 'pu'." },
+        { "id": "v_devoir_pc_0", "en": "I had to (devoir)", "fr": "J'ai dû", "type": "phrase", "tag": "Irregular past", "hint": "Circumflex accent on û distinguishes 'dû' from 'du'." },
+        { "id": "v_dire_pc_0", "en": "I said / told (dire)", "fr": "J'ai dit", "type": "phrase", "tag": "Irregular past", "hint": "Past participle of dire is 'dit'." },
+        { "id": "v_ex_avoir", "en": "We had two meetings yesterday.", "fr": "Nous avons eu deux réunions hier.", "type": "sentence", "tag": "avoir · past", "hint": "Preply example sentence." },
+        { "id": "v_ex_prendre", "en": "They took her luggage by accident!", "fr": "Ils ont pris ses bagages par accident!", "type": "sentence", "tag": "prendre · past", "hint": "Preply example sentence." },
+        { "id": "v_ex_utiliser", "en": "Have you used this computer before?", "fr": "Avez-vous déjà utilisé cet ordinateur?", "type": "sentence", "tag": "utiliser · past", "hint": "'déjà' = already / before." }
+      ]
+    },
+    {
+      "id": "verbs-t5",
+      "number": "V5",
+      "title": "Past Habits & Future Plans",
+      "frenchTitle": "L'imparfait et le futur simple",
+      "pages": "All 20 Verbs · Past & Future",
+      "focus": "Imparfait & Futur",
+      "description": "Describe past habits with the smooth -ais/-ait/-aient endings of imparfait, and talk about tomorrow using key futur simple stems.",
+      "items": [
+        { "id": "v_etre_imp_0", "en": "I was / used to be (imparfait)", "fr": "J'étais", "type": "phrase", "tag": "Imparfait", "hint": "Être is the only verb with an irregular imparfait stem: ét-." },
+        { "id": "v_avoir_imp_0", "en": "I had / used to have (imparfait)", "fr": "J'avais", "type": "phrase", "tag": "Imparfait", "hint": "Built from nous avons → av- + ais." },
+        { "id": "v_aller_imp_0", "en": "I used to go (imparfait)", "fr": "J'allais", "type": "phrase", "tag": "Imparfait", "hint": "Built from nous allons → all- + ais." },
+        { "id": "v_faire_imp_0", "en": "I was doing / used to do (imparfait)", "fr": "Je faisais", "type": "phrase", "tag": "Imparfait", "hint": "Built from nous faisons → fais- + ais." },
+        { "id": "v_vouloir_imp_0", "en": "I wanted / used to want (imparfait)", "fr": "Je voulais", "type": "phrase", "tag": "Imparfait", "hint": "Smooth -ais ending." },
+        { "id": "v_savoir_imp_0", "en": "I knew (imparfait)", "fr": "Je savais", "type": "phrase", "tag": "Imparfait", "hint": "Often used for ongoing knowledge in the past." },
+        { "id": "v_etre_fut_0", "en": "I will be (futur simple)", "fr": "Je serai", "type": "phrase", "tag": "Futur simple", "hint": "Irregular future stem ser- + ai." },
+        { "id": "v_avoir_fut_0", "en": "I will have (futur simple)", "fr": "J'aurai", "type": "phrase", "tag": "Futur simple", "hint": "Irregular future stem aur- + ai." },
+        { "id": "v_aller_fut_0", "en": "I will go (futur simple)", "fr": "J'irai", "type": "phrase", "tag": "Futur simple", "hint": "Irregular future stem ir- + ai." },
+        { "id": "v_faire_fut_0", "en": "I will do / make (futur simple)", "fr": "Je ferai", "type": "phrase", "tag": "Futur simple", "hint": "Irregular future stem fer- + ai." },
+        { "id": "v_pouvoir_fut_0", "en": "I will be able to (futur simple)", "fr": "Je pourrai", "type": "phrase", "tag": "Futur simple", "hint": "Double 'r' in pourr-ai!" },
+        { "id": "v_venir_fut_0", "en": "I will come (futur simple)", "fr": "Je viendrai", "type": "phrase", "tag": "Futur simple", "hint": "Irregular future stem viendr- + ai." },
+        { "id": "v_ex_aller", "en": "They went to the park every day.", "fr": "Ils allaient au parc tous les jours.", "type": "sentence", "tag": "Imparfait example", "hint": "Repeated past habit → imparfait." },
+        { "id": "v_ex_savoir", "en": "We knew this would happen.", "fr": "Nous savions que cela arriverait.", "type": "sentence", "tag": "Imparfait example", "hint": "Preply example sentence for savoir." },
+        { "id": "v_ex_penser", "en": "They will think about it later.", "fr": "Ils y penseront plus tard.", "type": "sentence", "tag": "Futur example", "hint": "'y' means 'about it'." },
+        { "id": "v_ex_habiter", "en": "She will live in Germany next year.", "fr": "Elle habitera en Allemagne l'année prochaine.", "type": "sentence", "tag": "Futur example", "hint": "Preply example sentence for habiter." }
+      ]
+    },
+    {
+      "id": "verbs-t6",
+      "number": "V6",
+      "title": "Real-Life Verb Sentences Sprint",
+      "frenchTitle": "Les 20 verbes en contexte",
+      "pages": "Preply Examples",
+      "focus": "Full Sentences",
+      "description": "Type authentic everyday French sentences using the 20 most common verbs across present, past, imperfect, and future tenses.",
+      "items": [
+        { "id": "v_ex_venir", "en": "Are you coming tomorrow?", "fr": "Tu viens demain?", "type": "sentence", "tag": "venir · Présent", "hint": "Everyday spoken question." },
+        { "id": "v_ex_venir_de", "en": "She has just finished her homework.", "fr": "Elle vient de terminer son devoir.", "type": "sentence", "tag": "venir de + verb", "hint": "'Venir de + infinitive' means 'have just done'!" },
+        { "id": "v_ex_pouvoir", "en": "Can you cook dinner tonight?", "fr": "Peux-tu préparer le dîner de ce soir?", "type": "sentence", "tag": "pouvoir · Présent", "hint": "Polite request with pouvoir." },
+        { "id": "v_ex_je_ne_peux_pas", "en": "I'm really sorry, but I can't help you.", "fr": "Je suis vraiment désolé, mais je ne peux pas vous aider.", "type": "sentence", "tag": "être + pouvoir + aider", "hint": "Combines three top-20 verbs!" },
+        { "id": "v_ex_je_dois_dire", "en": "I have to tell him this. I can't lie!", "fr": "Je dois lui dire ça. Je ne peux pas mentir!", "type": "sentence", "tag": "devoir + dire + pouvoir", "hint": "Preply example for devoir." },
+        { "id": "v_ex_dire", "en": "He told everyone the truth.", "fr": "Il a dit la vérité à tout le monde.", "type": "sentence", "tag": "dire · Passé composé", "hint": "'tout le monde' = everyone." },
+        { "id": "v_ex_donner", "en": "No, she didn't give him her books.", "fr": "Non, elle ne lui a pas donné ses livres.", "type": "sentence", "tag": "donner · Passé composé", "hint": "Negative passé composé wraps ne...pas around 'a'." },
+        { "id": "v_ex_aider", "en": "She will help them move apartments.", "fr": "Elle les aidera à déménager.", "type": "sentence", "tag": "aider · Futur", "hint": "'aider à' + infinitive." },
+        { "id": "v_ex_aimer", "en": "They used to love playing together when they were children.", "fr": "Ils aimaient jouer ensemble quand ils étaient enfants.", "type": "sentence", "tag": "aimer · Imparfait", "hint": "Preply example combining aimer and être in imparfait." },
+        { "id": "v_ex_regarder", "en": "I watched the birds in the forest.", "fr": "J'ai regardé les oiseaux dans la forêt.", "type": "sentence", "tag": "regarder · Passé composé", "hint": "'Regarder' = intentionally watch (vs passive 'voir')." },
+        { "id": "v_ex_essayer", "en": "They tried to take the plane.", "fr": "Ils ont essayé de prendre l'avion.", "type": "sentence", "tag": "essayer + prendre", "hint": "'Essayer de' + infinitive = try to do something." },
+        { "id": "v_ex_je_veux_astronaute", "en": "I want to become an astronaut!", "fr": "Je veux devenir astronaute!", "type": "sentence", "tag": "vouloir + infinitive", "hint": "Preply example for expressing a desire." }
+      ]
+    }
+  ]
+}

@@ -21,6 +21,7 @@ import edge_tts
 
 ROOT = Path(__file__).resolve().parent.parent
 CURRICULUM_PATH = ROOT / "src" / "data" / "curriculum.json"
+VERBS_PATH = ROOT / "src" / "data" / "verbs.json"
 AUDIO_ROOT = ROOT / "public" / "audio"
 
 VOICES = {
@@ -54,22 +55,48 @@ async def synth_one(sem: asyncio.Semaphore, voice_key: str, voice_id: str, item_
     return "failed"
 
 
+def collect_items() -> list[tuple[str, str]]:
+    items: list[tuple[str, str]] = []
+    seen: set[str] = set()
+
+    def add(item_id: str, text: str) -> None:
+        if item_id not in seen:
+            seen.add(item_id)
+            items.append((item_id, text))
+
+    # 1. Main textbook curriculum
+    data = json.loads(CURRICULUM_PATH.read_text(encoding="utf-8"))
+    for chapter in data["chapters"]:
+        for lesson in chapter["lessons"]:
+            for item in lesson["items"]:
+                add(item["id"], item["fr"])
+
+    # 2. Verbs trainer (tracks + all per-verb Essential Mix forms & examples)
+    if VERBS_PATH.exists():
+        vdata = json.loads(VERBS_PATH.read_text(encoding="utf-8"))
+        for track in vdata.get("tracks", []):
+            for item in track["items"]:
+                add(item["id"], item["fr"])
+        for verb in vdata.get("verbs", []):
+            vid = verb["id"]
+            for idx, form in enumerate(verb["conjugations"]["present"]):
+                add(f"v_{vid}_pr_{idx}", form)
+            add(f"v_{vid}_pc_0", verb["conjugations"]["passe_compose"][0])
+            add(f"v_{vid}_imp_0", verb["conjugations"]["imparfait"][0])
+            add(f"v_{vid}_fut_0", verb["conjugations"]["futur"][0])
+            if verb.get("example"):
+                add(verb["example"]["id"], verb["example"]["fr"])
+
+    return items
+
+
 async def main() -> None:
     parser = argparse.ArgumentParser(description="Generate neural French MP3 audio for Clavier Français.")
     parser.add_argument("--force", action="store_true", help="Regenerate even if MP3 already exists.")
     args = parser.parse_args()
 
-    data = json.loads(CURRICULUM_PATH.read_text(encoding="utf-8"))
-    items = []
-    seen = set()
-    for chapter in data["chapters"]:
-        for lesson in chapter["lessons"]:
-            for item in lesson["items"]:
-                if item["id"] not in seen:
-                    seen.add(item["id"])
-                    items.append((item["id"], item["fr"]))
-
-    print(f"Found {len(items)} unique French items across {len(data['chapters'])} chapters.")
+    items = collect_items()
+    print(f"Found {len(items)} unique French items across curriculum and verbs.")
     sem = asyncio.Semaphore(CONCURRENCY)
 
     tasks = []
