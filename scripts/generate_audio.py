@@ -22,6 +22,7 @@ import edge_tts
 ROOT = Path(__file__).resolve().parent.parent
 CURRICULUM_PATH = ROOT / "src" / "data" / "curriculum.json"
 VERBS_PATH = ROOT / "src" / "data" / "verbs.json"
+PARAGRAPHS_PATH = ROOT / "src" / "data" / "paragraphs.json"
 AUDIO_ROOT = ROOT / "public" / "audio"
 
 VOICES = {
@@ -86,6 +87,16 @@ def collect_items() -> list[tuple[str, str]]:
             add(f"v_{vid}_fut_0", verb["conjugations"]["futur"][0])
             if verb.get("example"):
                 add(verb["example"]["id"], verb["example"]["fr"])
+
+    # 3. Simple French paragraphs (per-sentence + full paragraph narration)
+    if PARAGRAPHS_PATH.exists():
+        pdata = json.loads(PARAGRAPHS_PATH.read_text(encoding="utf-8"))
+        for para in pdata.get("paragraphs", []):
+            for item in para["items"]:
+                add(item["id"], item["fr"])
+            if para.get("fullAudioId"):
+                full_text = " ".join(i["fr"] for i in para["items"])
+                add(para["fullAudioId"], full_text)
 
     return items
 

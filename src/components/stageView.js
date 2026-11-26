@@ -131,9 +131,48 @@ function getRelevantGrammar(lesson, curriculum) {
   return curriculum.grammarGuides.find((g) => g.id === 'possession') || curriculum.grammarGuides[0];
 }
 
+function buildStoryContextHTML(session) {
+  const items = session.items || [];
+  const pieces = items.map((it, idx) => {
+    if (idx < session.itemIndex) {
+      return `<span class="story-sent-done">${escapeHtml(it.fr)}</span>`;
+    }
+    if (idx === session.itemIndex) {
+      return `<span class="story-sent-active">✎ Sentence ${idx + 1} of ${items.length}</span>`;
+    }
+    if (session.mode === 'guided') {
+      return `<span class="story-sent-upcoming">${escapeHtml(it.fr)}</span>`;
+    }
+    return `<span class="story-sent-upcoming">•••</span>`;
+  });
+
+  return `
+    <div class="story-context-box" aria-label="Paragraph Progress Context">
+      <div class="story-context-head">
+        <span class="story-context-label">📖 Story Progress · ${escapeHtml(session.lesson.frenchTitle || session.lesson.title)}</span>
+        ${
+          session.lesson.fullAudioId
+            ? `<button type="button" class="audio-btn-slow" id="st-play-full-story" title="Hear the full French paragraph read aloud">▶ Full Story</button>`
+            : ''
+        }
+      </div>
+      <p class="story-flow">${pieces.join(' ')}</p>
+    </div>
+  `;
+}
+
 export function createStageController(
   container,
-  { curriculum, verbsData, onBackToLessons, onBackToVerbs, onOpenLesson, onStatsUpdated }
+  {
+    curriculum,
+    verbsData,
+    paragraphsData,
+    onBackToLessons,
+    onBackToVerbs,
+    onBackToParagraphs,
+    onOpenLesson,
+    onStatsUpdated,
+  }
 ) {
   let session = null;
   let advanceTimer = null;
@@ -371,9 +410,18 @@ export function createStageController(
   function renderSummary(summary) {
     const isVerbLesson =
       summary.lesson.sourceSection === 'verbs' || String(summary.lesson.id || '').startsWith('verb');
-    const sequence = isVerbLesson
-      ? (verbsData?.tracks || []).map((t) => ({ ...t, sourceSection: 'verbs' }))
-      : curriculum.chapters.flatMap((c) => c.lessons);
+    const isParagraphLesson =
+      summary.lesson.sourceSection === 'paragraphs' || String(summary.lesson.id || '').startsWith('para-');
+
+    const sequence = isParagraphLesson
+      ? (paragraphsData?.paragraphs || []).map((p) => ({
+          ...p,
+          sourceSection: 'paragraphs',
+          pages: p.sourceLabel,
+        }))
+      : isVerbLesson
+        ? (verbsData?.tracks || []).map((t) => ({ ...t, sourceSection: 'verbs' }))
+        : curriculum.chapters.flatMap((c) => c.lessons);
     const curIdx = sequence.findIndex((l) => l.id === summary.lesson.id);
     const nextLesson = curIdx >= 0 && curIdx + 1 < sequence.length ? sequence[curIdx + 1] : null;
     const nextMode =
@@ -403,6 +451,31 @@ export function createStageController(
         `
         : '';
 
+    const fullParagraphRecapHtml = isParagraphLesson
+      ? `
+        <div class="story-context-box" style="margin-bottom:22px;">
+          <div class="story-context-head">
+            <span class="story-context-label">✓ Complete French Paragraph</span>
+            ${
+              summary.lesson.fullAudioId
+                ? `<button type="button" class="audio-btn-slow" id="sum-play-full-story">▶ Listen to Full Paragraph</button>`
+                : ''
+            }
+          </div>
+          <p class="story-flow" style="color:var(--ink-primary); font-weight:600;">
+            ${escapeHtml(summary.lesson.items.map((i) => i.fr).join(' '))}
+          </p>
+        </div>
+      `
+      : '';
+
+    const backLabel = isParagraphLesson ? 'All Paragraphs' : isVerbLesson ? 'All Verbs' : 'All Lessons';
+    const nextLabel = isParagraphLesson
+      ? `Next Paragraph (${nextLesson?.number})`
+      : isVerbLesson
+        ? `Next Track (${nextLesson?.number})`
+        : `Next Lesson (${nextLesson?.number})`;
+
     container.innerHTML = `
       <section class="summary-card" aria-label="Lesson Complete">
         <div class="summary-stars" aria-label="${summary.stars} out of 3 stars">
@@ -410,7 +483,7 @@ export function createStageController(
             .map((n) => `<span class="summary-star ${n <= summary.stars ? 'is-earned' : ''}">★</span>`)
             .join('')}
         </div>
-        <h1 class="summary-title">Magnifique ! Lesson Complete</h1>
+        <h1 class="summary-title">${isParagraphLesson ? 'Bravo ! Paragraph Complete' : 'Magnifique ! Lesson Complete'}</h1>
         <p class="summary-sub">
           ${escapeHtml(summary.lesson.title)} · <strong>${summary.mode.toUpperCase()}</strong> mode
         </p>
@@ -430,24 +503,31 @@ export function createStageController(
           </div>
           <div class="summary-metric">
             <div class="summary-metric-val">${summary.itemsCount}</div>
-            <div class="summary-metric-lbl">Prompts</div>
+            <div class="summary-metric-lbl">${isParagraphLesson ? 'Sentences' : 'Prompts'}</div>
           </div>
         </div>
 
+        ${fullParagraphRecapHtml}
         ${missedHtml}
 
         <div class="summary-actions">
           ${
             nextMode
               ? `<button type="button" class="btn btn-primary" id="sum-next-mode">
-                  Level Up → Try ${nextMode === 'translate' ? 'Translate Mode' : 'Dictation Mode'}
+                  ${
+                    isParagraphLesson
+                      ? nextMode === 'translate'
+                        ? 'Step 2 → Translate Mode (EN → FR)'
+                        : 'Step 3 → Dictation Mode (Listen & Type)'
+                      : `Level Up → Try ${nextMode === 'translate' ? 'Translate Mode' : 'Dictation Mode'}`
+                  }
                 </button>`
               : ''
           }
           ${
             nextLesson
               ? `<button type="button" class="btn ${nextMode ? 'btn-success' : 'btn-primary'}" id="sum-next-lesson">
-                  ${isVerbLesson ? `Next Track (${nextLesson.number})` : `Next Lesson (${nextLesson.number})`} →
+                  ${nextLabel} →
                 </button>`
               : ''
           }
@@ -459,10 +539,19 @@ export function createStageController(
               : ''
           }
           <button type="button" class="btn btn-secondary" id="sum-retry">Practice Again</button>
-          <button type="button" class="btn btn-ghost" id="sum-back">${isVerbLesson ? 'All Verbs' : 'All Lessons'}</button>
+          <button type="button" class="btn btn-ghost" id="sum-back">${backLabel}</button>
         </div>
       </section>
     `;
+
+    container.querySelector('#sum-play-full-story')?.addEventListener('click', () => {
+      if (summary.lesson.fullAudioId) {
+        audioEngine.play(
+          { id: summary.lesson.fullAudioId, fr: summary.lesson.items.map((i) => i.fr).join(' ') },
+          { voice: progressStore.getPrefs().voice, slow: false }
+        );
+      }
+    });
 
     container.querySelectorAll('[data-replay-missed]').forEach((btn) => {
       btn.addEventListener('click', () => {
@@ -500,7 +589,9 @@ export function createStageController(
     });
 
     container.querySelector('#sum-back')?.addEventListener('click', () => {
-      if (isVerbLesson && onBackToVerbs) {
+      if (isParagraphLesson && onBackToParagraphs) {
+        onBackToParagraphs();
+      } else if (isVerbLesson && onBackToVerbs) {
         onBackToVerbs();
       } else {
         onBackToLessons();
@@ -518,16 +609,20 @@ export function createStageController(
     const grammar = getRelevantGrammar(session.lesson, curriculum);
     const isVerbLesson =
       session.lesson.sourceSection === 'verbs' || String(session.lesson.id || '').startsWith('verb');
+    const isParagraphLesson =
+      session.lesson.sourceSection === 'paragraphs' || String(session.lesson.id || '').startsWith('para-');
 
     const englishMasked = session.mode === 'dictation' && !session.revealEnglishInDictation;
+    const backBtnLabel = isParagraphLesson ? '← Paragraphs' : isVerbLesson ? '← Verbs' : '← Lessons';
+    const titlePrefix = isParagraphLesson || isVerbLesson ? '' : 'Lesson ';
 
     container.innerHTML = `
       <div class="stage-wrap">
         <div class="stage-header">
           <div class="stage-title-group">
-            <button type="button" class="btn btn-secondary btn-sm" id="st-back-btn">${isVerbLesson ? '← Verbs' : '← Lessons'}</button>
+            <button type="button" class="btn btn-secondary btn-sm" id="st-back-btn">${backBtnLabel}</button>
             <div>
-              <h1 class="stage-lesson-title">${isVerbLesson ? '' : 'Lesson '}${escapeHtml(session.lesson.number)}: ${escapeHtml(session.lesson.title)}</h1>
+              <h1 class="stage-lesson-title">${titlePrefix}${escapeHtml(session.lesson.number)}: ${escapeHtml(session.lesson.title)}</h1>
               <div class="stage-lesson-meta">${escapeHtml(session.lesson.frenchTitle || '')} · ${escapeHtml(session.lesson.pages || '')}</div>
             </div>
           </div>
@@ -566,7 +661,7 @@ export function createStageController(
 
           <div class="progress-inline">
             <div class="progress-inline-head">
-              <span>Lesson Progress</span>
+              <span>${isParagraphLesson ? 'Paragraph Progress' : 'Lesson Progress'}</span>
               <span id="st-count">${completedCount} / ${session.items.length}</span>
             </div>
             <div class="progress-track">
@@ -617,6 +712,8 @@ export function createStageController(
         }
 
         <section class="typing-card is-focused" id="st-typing-card" tabindex="0">
+          ${isParagraphLesson ? buildStoryContextHTML(session) : ''}
+
           <div class="typing-card-top">
             <div class="card-badges">
               <span class="pill-badge">${escapeHtml(item.tag)}</span>
@@ -722,11 +819,24 @@ export function createStageController(
     container.querySelector('#st-back-btn')?.addEventListener('click', () => {
       const isVerbLesson =
         session?.lesson?.sourceSection === 'verbs' || String(session?.lesson?.id || '').startsWith('verb');
+      const isParagraphLesson =
+        session?.lesson?.sourceSection === 'paragraphs' || String(session?.lesson?.id || '').startsWith('para-');
       stop();
-      if (isVerbLesson && onBackToVerbs) {
+      if (isParagraphLesson && onBackToParagraphs) {
+        onBackToParagraphs();
+      } else if (isVerbLesson && onBackToVerbs) {
         onBackToVerbs();
       } else {
         onBackToLessons();
+      }
+    });
+
+    container.querySelector('#st-play-full-story')?.addEventListener('click', () => {
+      if (session?.lesson?.fullAudioId) {
+        audioEngine.play(
+          { id: session.lesson.fullAudioId, fr: session.lesson.items.map((i) => i.fr).join(' ') },
+          { voice: progressStore.getPrefs().voice, slow: false }
+        );
       }
     });
 

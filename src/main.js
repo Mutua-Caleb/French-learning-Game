@@ -3,13 +3,16 @@ import './styles/typing-stage.css';
 import './styles/keyboard.css';
 import './styles/curriculum.css';
 import './styles/verbs.css';
+import './styles/paragraphs.css';
 
 import curriculum from './data/curriculum.json';
 import verbsData from './data/verbs.json';
+import paragraphsData from './data/paragraphs.json';
 import { progressStore } from './engine/progressStore.js';
 import { soundEffects } from './engine/soundEffects.js';
 import { renderCurriculumView } from './components/curriculumView.js';
 import { renderVerbsView } from './components/verbsView.js';
+import { renderParagraphsView } from './components/paragraphsView.js';
 import { renderPhrasebookView } from './components/phrasebookView.js';
 import { createStageController } from './components/stageView.js';
 
@@ -17,16 +20,23 @@ const mainEl = document.getElementById('main-content');
 const navTabs = document.querySelectorAll('.nav-tab');
 const allCurriculumLessons = curriculum.chapters.flatMap((ch) => ch.lessons);
 const allVerbTracks = verbsData.tracks.map((t) => ({ ...t, sourceSection: 'verbs' }));
+const allParagraphs = paragraphsData.paragraphs.map((p) => ({
+  ...p,
+  sourceSection: 'paragraphs',
+  pages: p.sourceLabel,
+}));
 const allTrackedIds = [
   ...allCurriculumLessons.map((l) => l.id),
   ...allVerbTracks.map((t) => t.id),
   ...verbsData.verbs.map((v) => `verb-${v.id}`),
+  ...allParagraphs.map((p) => p.id),
 ];
 
 let activeView = 'lessons';
 let currentLesson =
   allCurriculumLessons.find((l) => l.id === progressStore.state.lastLessonId) ||
   allVerbTracks.find((t) => t.id === progressStore.state.lastLessonId) ||
+  allParagraphs.find((p) => p.id === progressStore.state.lastLessonId) ||
   allCurriculumLessons[0];
 
 soundEffects.setEnabled(progressStore.getPrefs().keySounds);
@@ -45,8 +55,10 @@ function refreshHeaderStats() {
 const stageController = createStageController(mainEl, {
   curriculum,
   verbsData,
+  paragraphsData,
   onBackToLessons: () => switchView('lessons'),
   onBackToVerbs: () => switchView('verbs'),
+  onBackToParagraphs: () => switchView('paragraphs'),
   onOpenLesson: (lessonOrId, mode) => {
     if (typeof lessonOrId === 'object' && lessonOrId !== null) {
       openLessonObject(lessonOrId, mode);
@@ -101,6 +113,7 @@ function openLesson(lessonId, mode) {
   const found =
     allCurriculumLessons.find((l) => l.id === lessonId) ||
     allVerbTracks.find((t) => t.id === lessonId) ||
+    allParagraphs.find((p) => p.id === lessonId) ||
     allCurriculumLessons[0];
   openLessonObject(found, mode);
 }
@@ -124,6 +137,10 @@ function switchView(viewName) {
   } else if (viewName === 'verbs') {
     renderVerbsView(mainEl, verbsData, {
       onStartLesson: (lessonObj, mode) => openLessonObject(lessonObj, mode),
+    });
+  } else if (viewName === 'paragraphs') {
+    renderParagraphsView(mainEl, paragraphsData, {
+      onStartParagraph: (paraObj, mode) => openLessonObject(paraObj, mode),
     });
   } else if (viewName === 'stage') {
     stageController.start(currentLesson, progressStore.getPrefs().practiceMode || 'guided');

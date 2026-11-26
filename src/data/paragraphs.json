@@ -1,0 +1,424 @@
+{
+  "meta": {
+    "title": "Simple French Paragraphs — Guided, Translate & Dictation",
+    "description": "Short 5-sentence French paragraphs built exclusively from French 1-9-32.pdf (Chapters 2 & 3) and the 20 most common French verbs."
+  },
+  "paragraphs": [
+    {
+      "id": "para-1",
+      "number": "P1",
+      "title": "My Classroom",
+      "frenchTitle": "Ma salle de classe",
+      "sourceLabel": "Ch. 2 · La salle de classe",
+      "tenseFocus": "Présent",
+      "description": "Describe your classroom, desk, and pencil case using Chapter 2 objects, 'il y a', avoir, être, and prepositions.",
+      "fullAudioId": "p1_full",
+      "items": [
+        {
+          "id": "p1_s1",
+          "en": "Here is my classroom.",
+          "fr": "Voici ma salle de classe.",
+          "type": "sentence",
+          "tag": "Sentence 1 · Voici",
+          "hint": "'Voici' introduces something right in front of you (Ch. 2 & 3)."
+        },
+        {
+          "id": "p1_s2",
+          "en": "In the classroom, there is a whiteboard, a map, and a computer.",
+          "fr": "Dans la classe, il y a un tableau blanc, une carte et un ordinateur.",
+          "type": "sentence",
+          "tag": "Sentence 2 · Il y a",
+          "hint": "Classroom objects from pp. 9 & 14."
+        },
+        {
+          "id": "p1_s3",
+          "en": "My bag is under the table, and my pencil case is on the desk.",
+          "fr": "Mon sac est sous la table, et ma trousse est sur le pupitre.",
+          "type": "sentence",
+          "tag": "Sentence 3 · Prepositions",
+          "hint": "'sous' = under, 'sur' = on top of (p. 18–19)."
+        },
+        {
+          "id": "p1_s4",
+          "en": "In my pencil case, I have two pens, a ruler, and an eraser.",
+          "fr": "Dans ma trousse, j'ai deux stylos, une règle et une gomme.",
+          "type": "sentence",
+          "tag": "Sentence 4 · Avoir",
+          "hint": "Grave accent on è in règle."
+        },
+        {
+          "id": "p1_s5",
+          "en": "The teacher is in front of the board, and we listen!",
+          "fr": "Le professeur est devant le tableau, et nous écoutons!",
+          "type": "sentence",
+          "tag": "Sentence 5 · Être & -ER",
+          "hint": "'devant' = in front of; nous + -ons."
+        }
+      ]
+    },
+    {
+      "id": "para-2",
+      "number": "P2",
+      "title": "Back to School with Nicolas",
+      "frenchTitle": "La rentrée avec Nicolas",
+      "sourceLabel": "Ch. 2 · La rentrée",
+      "tenseFocus": "Présent",
+      "description": "Practice introductions, ages with 'avoir', possession with 'de', and classroom friends from Chapter 2.",
+      "fullAudioId": "p2_full",
+      "items": [
+        {
+          "id": "p2_s1",
+          "en": "Hello! I am Nicolas and I am eleven years old.",
+          "fr": "Bonjour! Je suis Nicolas et j'ai onze ans.",
+          "type": "sentence",
+          "tag": "Sentence 1 · Être & Avoir",
+          "hint": "Use être for your name and avoir for your age (p. 21–22)."
+        },
+        {
+          "id": "p2_s2",
+          "en": "My friend Marc is also in my class.",
+          "fr": "Mon ami Marc est aussi dans ma classe.",
+          "type": "sentence",
+          "tag": "Sentence 2 · Être",
+          "hint": "'aussi' = also (p. 12, 18)."
+        },
+        {
+          "id": "p2_s3",
+          "en": "He has his French book and his exercise book in his bag.",
+          "fr": "Il a son livre de français et son cahier dans son sac.",
+          "type": "sentence",
+          "tag": "Sentence 3 · Avoir & Son",
+          "hint": "Cedilla in français; 'son' for masculine nouns."
+        },
+        {
+          "id": "p2_s4",
+          "en": "Pierre's pen is red, and Sophie's ruler is next to the dictionary.",
+          "fr": "Le stylo de Pierre est rouge, et la règle de Sophie est à côté du dictionnaire.",
+          "type": "sentence",
+          "tag": "Sentence 4 · Possession (de)",
+          "hint": "'à côté de + le' becomes 'à côté du'."
+        },
+        {
+          "id": "p2_s5",
+          "en": "We speak French and we like our teacher!",
+          "fr": "Nous parlons français et nous aimons notre professeur!",
+          "type": "sentence",
+          "tag": "Sentence 5 · -ER Verbs",
+          "hint": "'nous' takes -ons on regular -ER verbs."
+        }
+      ]
+    },
+    {
+      "id": "para-3",
+      "number": "P3",
+      "title": "Breakfast at Home",
+      "frenchTitle": "Le petit-déjeuner chez nous",
+      "sourceLabel": "Ch. 3 · Chez nous",
+      "tenseFocus": "Présent",
+      "description": "Type Georges and Martine's classic French morning routine from Chapter 3 (pp. 23–24) with rooms, breakfast foods, and -ER verbs.",
+      "fullAudioId": "p3_full",
+      "items": [
+        {
+          "id": "p3_s1",
+          "en": "Georges is in the bathroom, and Martine is in her bedroom.",
+          "fr": "Georges est dans la salle de bains, et Martine est dans sa chambre.",
+          "type": "sentence",
+          "tag": "Sentence 1 · Rooms",
+          "hint": "Opening scene from p. 23."
+        },
+        {
+          "id": "p3_s2",
+          "en": "Mum is in the kitchen and she is preparing breakfast.",
+          "fr": "Maman est dans la cuisine et elle prépare le petit-déjeuner.",
+          "type": "sentence",
+          "tag": "Sentence 2 · Préparer",
+          "hint": "Acute accent on é in prépare and petit-déjeuner."
+        },
+        {
+          "id": "p3_s3",
+          "en": "Dad is looking at the newspaper and drinking his coffee.",
+          "fr": "Papa regarde le journal et il adore le café.",
+          "type": "sentence",
+          "tag": "Sentence 3 · Regarder & Adorer",
+          "hint": "From p. 23–24: Papa loves coffee!"
+        },
+        {
+          "id": "p3_s4",
+          "en": "Georges eats a tartine with butter and jam.",
+          "fr": "Georges mange une tartine avec du beurre et de la confiture.",
+          "type": "sentence",
+          "tag": "Sentence 4 · Breakfast foods",
+          "hint": "Vocabulary from pp. 24 & 27–28."
+        },
+        {
+          "id": "p3_s5",
+          "en": "Martine eats a croissant with her hot chocolate; they are delicious!",
+          "fr": "Martine mange un croissant avec son chocolat; ils sont délicieux!",
+          "type": "sentence",
+          "tag": "Sentence 5 · Story finale",
+          "hint": "Notice the acute accent é in délicieux."
+        }
+      ]
+    },
+    {
+      "id": "para-4",
+      "number": "P4",
+      "title": "Welcome to My House",
+      "frenchTitle": "Voici ma maison!",
+      "sourceLabel": "Ch. 3 · House & Pets",
+      "tenseFocus": "Présent",
+      "description": "Give a guided tour of a French home using rooms, ground floor/upstairs, left/right, voici/voilà, and pets (pp. 29–32).",
+      "fullAudioId": "p4_full",
+      "items": [
+        {
+          "id": "p4_s1",
+          "en": "Here is my house; I live here with my parents.",
+          "fr": "Voici ma maison; j'habite ici avec mes parents.",
+          "type": "sentence",
+          "tag": "Sentence 1 · Habiter",
+          "hint": "Silent 'h' in habiter → j'habite."
+        },
+        {
+          "id": "p4_s2",
+          "en": "On the ground floor, there is the hall, the living room, and the kitchen.",
+          "fr": "Au rez-de-chaussée, il y a l'entrée, le salon et la cuisine.",
+          "type": "sentence",
+          "tag": "Sentence 2 · Ground floor",
+          "hint": "House vocabulary from p. 31."
+        },
+        {
+          "id": "p4_s3",
+          "en": "To the left, there is the dining room, and to the right, there is the garden.",
+          "fr": "À gauche, il y a la salle à manger, et à droite, il y a le jardin.",
+          "type": "sentence",
+          "tag": "Sentence 3 · Directions",
+          "hint": "'à gauche' = to the left, 'à droite' = to the right."
+        },
+        {
+          "id": "p4_s4",
+          "en": "Upstairs, there is my bedroom and the bathroom.",
+          "fr": "À l'étage, il y a ma chambre et la salle de bains.",
+          "type": "sentence",
+          "tag": "Sentence 4 · Upstairs",
+          "hint": "Grave accent on À, acute accent on é in étage."
+        },
+        {
+          "id": "p4_s5",
+          "en": "In the house, there is also my dog and my cat!",
+          "fr": "Dans la maison, il y a aussi mon chien et mon chat!",
+          "type": "sentence",
+          "tag": "Sentence 5 · Pets",
+          "hint": "Combines Exercice 3.10 & 3.12 (pp. 30, 32)."
+        }
+      ]
+    },
+    {
+      "id": "para-5",
+      "number": "P5",
+      "title": "A Busy Day with Core Verbs",
+      "frenchTitle": "Une journée bien remplie",
+      "sourceLabel": "Top 20 Verbs · Présent",
+      "tenseFocus": "Présent",
+      "description": "Use the highest-frequency irregular and regular verbs (aller, faire, prendre, vouloir, pouvoir, devoir, aider) in one simple story.",
+      "fullAudioId": "p5_full",
+      "items": [
+        {
+          "id": "p5_s1",
+          "en": "Today, it is cold, so I take my bag and I go to school.",
+          "fr": "Aujourd'hui, il fait froid, alors je prends mon sac et je vais à l'école.",
+          "type": "sentence",
+          "tag": "Sentence 1 · Faire, Prendre, Aller",
+          "hint": "Weather uses 'il fait'; 'je vais' = I go."
+        },
+        {
+          "id": "p5_s2",
+          "en": "I want to speak French very well with my friends.",
+          "fr": "Je veux parler français très bien avec mes amis.",
+          "type": "sentence",
+          "tag": "Sentence 2 · Vouloir + Parler",
+          "hint": "Conjugated verb (je veux) + infinitive (parler)."
+        },
+        {
+          "id": "p5_s3",
+          "en": "I must do my homework, and I use my computer.",
+          "fr": "Je dois faire mes devoirs, et j'utilise mon ordinateur.",
+          "type": "sentence",
+          "tag": "Sentence 3 · Devoir, Faire, Utiliser",
+          "hint": "'Je dois' = I must / have to."
+        },
+        {
+          "id": "p5_s4",
+          "en": "My friend comes to my house, and he helps me.",
+          "fr": "Mon ami vient chez moi, et il m'aide.",
+          "type": "sentence",
+          "tag": "Sentence 4 · Venir & Aider",
+          "hint": "'il vient' (venir) and 'il m'aide' (aider)."
+        },
+        {
+          "id": "p5_s5",
+          "en": "Together, we can understand everything, and we try again!",
+          "fr": "Ensemble, nous pouvons tout savoir, et nous essayons encore!",
+          "type": "sentence",
+          "tag": "Sentence 5 · Pouvoir, Savoir, Essayer",
+          "hint": "'nous pouvons' (we can) + 'nous essayons' (we try)."
+        }
+      ]
+    },
+    {
+      "id": "para-6",
+      "number": "P6",
+      "title": "What We Love Doing",
+      "frenchTitle": "Ce que nous aimons faire",
+      "sourceLabel": "Ch. 3 + Top 20 Verbs",
+      "tenseFocus": "Présent + Infinitif",
+      "description": "Combine aimer, adorer, regarder, écouter, chanter, and penser in a light paragraph about hobbies at home.",
+      "fullAudioId": "p6_full",
+      "items": [
+        {
+          "id": "p6_s1",
+          "en": "In our house, everyone loves music and good food.",
+          "fr": "Dans notre maison, tout le monde aime la musique et les bons repas.",
+          "type": "sentence",
+          "tag": "Sentence 1 · Aimer",
+          "hint": "'tout le monde' takes singular 'aime'."
+        },
+        {
+          "id": "p6_s2",
+          "en": "Mum loves to sing while she listens to the radio.",
+          "fr": "Maman adore chanter pendant qu'elle écoute la radio.",
+          "type": "sentence",
+          "tag": "Sentence 2 · Adorer + Infinitive",
+          "hint": "'pendant que' = while (p. 27); 'écouter' needs no 'to'."
+        },
+        {
+          "id": "p6_s3",
+          "en": "Nicolas loves watching television in the living room.",
+          "fr": "Nicolas adore regarder la télévision dans le salon.",
+          "type": "sentence",
+          "tag": "Sentence 3 · Regarder",
+          "hint": "Active watching uses 'regarder' (p. 28 & Preply)."
+        },
+        {
+          "id": "p6_s4",
+          "en": "Martine and I like to speak French and give good ideas.",
+          "fr": "Martine et moi, nous aimons parler français et donner de bonnes idées.",
+          "type": "sentence",
+          "tag": "Sentence 4 · Parler & Donner",
+          "hint": "Acute accent é in idées."
+        },
+        {
+          "id": "p6_s5",
+          "en": "What do you think of our family? We are happy, aren't we?",
+          "fr": "Que pensez-vous de notre famille? Nous sommes heureux, n'est-ce pas?",
+          "type": "sentence",
+          "tag": "Sentence 5 · Penser de & N'est-ce pas?",
+          "hint": "'penser de' asks for an opinion; 'n'est-ce pas?' (p. 32)."
+        }
+      ]
+    },
+    {
+      "id": "para-7",
+      "number": "P7",
+      "title": "Yesterday at the Park",
+      "frenchTitle": "Hier, au parc et à la maison",
+      "sourceLabel": "Top 20 Verbs · Past Tenses",
+      "tenseFocus": "Passé composé & Imparfait",
+      "description": "Tell a simple past-tense story contrasting completed actions (passé composé with avoir & être) and ongoing habits (imparfait).",
+      "fullAudioId": "p7_full",
+      "items": [
+        {
+          "id": "p7_s1",
+          "en": "Yesterday, I went to the park with my friends.",
+          "fr": "Hier, je suis allé au parc avec mes amis.",
+          "type": "sentence",
+          "tag": "Sentence 1 · Aller (être aux)",
+          "hint": "Aller uses être in passé composé: je suis allé."
+        },
+        {
+          "id": "p7_s2",
+          "en": "We talked a lot and we watched the birds.",
+          "fr": "Nous avons beaucoup parlé et nous avons regardé les oiseaux.",
+          "type": "sentence",
+          "tag": "Sentence 2 · -ER Passé composé",
+          "hint": "Regular -ER past participles end in -é (parlé, regardé)."
+        },
+        {
+          "id": "p7_s3",
+          "en": "When we were children, we used to go to the park every day.",
+          "fr": "Quand nous étions enfants, nous allions au parc tous les jours.",
+          "type": "sentence",
+          "tag": "Sentence 3 · Imparfait habits",
+          "hint": "Past habits use imparfait (étions, allions)."
+        },
+        {
+          "id": "p7_s4",
+          "en": "Then, I came home and I made a cake in the kitchen.",
+          "fr": "Ensuite, je suis venu à la maison et j'ai fait un gâteau dans la cuisine.",
+          "type": "sentence",
+          "tag": "Sentence 4 · Venir & Faire",
+          "hint": "Venir takes être (je suis venu); faire takes avoir (j'ai fait)."
+        },
+        {
+          "id": "p7_s5",
+          "en": "Everyone took a slice and said that it was delicious!",
+          "fr": "Tout le monde a pris une part et a dit que c'était délicieux!",
+          "type": "sentence",
+          "tag": "Sentence 5 · Prendre, Dire, Être",
+          "hint": "Irregular past participles: pris (prendre), dit (dire)."
+        }
+      ]
+    },
+    {
+      "id": "para-8",
+      "number": "P8",
+      "title": "My Plans for Tomorrow",
+      "frenchTitle": "Mes projets pour demain",
+      "sourceLabel": "Top 20 Verbs · Futur simple",
+      "tenseFocus": "Futur simple",
+      "description": "Practice the future tense of key irregular and -ER verbs (serai, irai, ferai, parlerai, prendrai, pourrai, habitera) in one upbeat paragraph.",
+      "fullAudioId": "p8_full",
+      "items": [
+        {
+          "id": "p8_s1",
+          "en": "Tomorrow, I will be ready early and I will eat a croissant.",
+          "fr": "Demain, je serai prêt tôt et je mangerai un croissant.",
+          "type": "sentence",
+          "tag": "Sentence 1 · Être & Manger",
+          "hint": "Irregular future of être: je serai."
+        },
+        {
+          "id": "p8_s2",
+          "en": "I will take my computer and I will go to the classroom.",
+          "fr": "Je prendrai mon ordinateur et j'irai dans la salle de classe.",
+          "type": "sentence",
+          "tag": "Sentence 2 · Prendre & Aller",
+          "hint": "Future stems: prendr- (prendre) and ir- (aller)."
+        },
+        {
+          "id": "p8_s3",
+          "en": "We will speak French and we will do our exercises together.",
+          "fr": "Nous parlerons français et nous ferons nos exercices ensemble.",
+          "type": "sentence",
+          "tag": "Sentence 3 · Parler & Faire",
+          "hint": "Future of faire uses fer- + ons."
+        },
+        {
+          "id": "p8_s4",
+          "en": "Next year, my friend will live in France, and I will help her.",
+          "fr": "L'année prochaine, mon amie habitera en France, et je l'aiderai.",
+          "type": "sentence",
+          "tag": "Sentence 4 · Habiter & Aider",
+          "hint": "Regular -ER verbs add future endings right onto the infinitive!"
+        },
+        {
+          "id": "p8_s5",
+          "en": "I know that we will be able to speak like real French people!",
+          "fr": "Je sais que nous pourrons parler comme de vrais Français!",
+          "type": "sentence",
+          "tag": "Sentence 5 · Savoir & Pouvoir",
+          "hint": "Double 'r' in nous pourrons (pouvoir future)."
+        }
+      ]
+    }
+  ]
+}
