@@ -1,5 +1,6 @@
 import { progressStore } from '../engine/progressStore.js';
 import { audioEngine } from '../engine/audioEngine.js';
+import { getLiteralGloss } from '../engine/literalGloss.js';
 
 const PRONOUN_LABELS = ['je / j’', 'tu', 'il / elle', 'nous', 'vous', 'ils / elles'];
 
@@ -361,6 +362,7 @@ export function renderVerbsView(container, verbsData, { onStartLesson }) {
               </div>
               <div class="verb-example-fr">${activeVerb.example.fr}</div>
               <div class="verb-example-en">${activeVerb.example.en}</div>
+              <div class="phrase-literal">🔍 Literally: ${getLiteralGloss(activeVerb.example.fr).sentence}</div>
             </div>
             <div class="phrase-play-group">
               <button type="button" class="icon-play-btn" id="spot-play-ex" title="Listen in Parisian French">▶</button>

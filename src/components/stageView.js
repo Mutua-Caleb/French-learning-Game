@@ -2,6 +2,7 @@ import { TypingSession, isAccentedFrenchChar } from '../engine/typingEngine.js';
 import { audioEngine } from '../engine/audioEngine.js';
 import { soundEffects } from '../engine/soundEffects.js';
 import { progressStore } from '../engine/progressStore.js';
+import { getLiteralGloss } from '../engine/literalGloss.js';
 import {
   renderAccentBarHTML,
   renderKeyboardHTML,
@@ -9,6 +10,38 @@ import {
   flashKeyOnBoard,
   charToKeyInfo,
 } from './keyboardView.js';
+
+function buildLiteralBoxHTML(item, { showFrenchPairs = true } = {}) {
+  if (!item?.fr) return '';
+  const { sentence, pairs } = getLiteralGloss(item.fr);
+  if (!sentence) return '';
+
+  const chipsHtml =
+    showFrenchPairs && pairs.length > 0
+      ? `
+        <div class="gloss-chips" aria-label="Word-by-word French to literal breakdown">
+          ${pairs
+            .map(
+              (p) => `
+                <span class="gloss-chip">
+                  <span class="gloss-fr">${escapeHtml(p.fr)}</span>
+                  <span class="gloss-lit">${escapeHtml(p.lit)}</span>
+                </span>
+              `
+            )
+            .join('')}
+        </div>
+      `
+      : '';
+
+  return `
+    <div class="literal-box" id="st-literal-box" aria-label="Literal Translation">
+      <div class="literal-head">🔍 Literally (French word order)</div>
+      <p class="literal-sentence">“${escapeHtml(sentence)}”</p>
+      ${chipsHtml}
+    </div>
+  `;
+}
 
 function escapeHtml(str) {
   return String(str)
@@ -368,6 +401,13 @@ export function createStageController(
             enEl.textContent = session.currentItem.en;
           }
         }
+        // Reveal full word-by-word French ↔ Literal chips upon completion
+        if (progressStore.getPrefs().showLiteral && session.mode !== 'guided') {
+          const litSlot = container.querySelector('#st-literal-slot');
+          if (litSlot) {
+            litSlot.innerHTML = buildLiteralBoxHTML(session.currentItem, { showFrenchPairs: true });
+          }
+        }
 
         const delayMs = session.mode === 'translate' ? 1450 : 750;
         advanceTimer = window.setTimeout(() => {
@@ -684,6 +724,14 @@ export function createStageController(
             </button>
             <button
               type="button"
+              class="toggle-pill ${prefs.showLiteral ? 'is-on' : ''}"
+              id="ctl-literal"
+              title="Show literal word-for-word French translation to build structural associations"
+            >
+              🔍 Literal
+            </button>
+            <button
+              type="button"
               class="toggle-pill ${prefs.accentMode === 'smart' ? 'is-on' : ''}"
               id="ctl-accents"
               title="Smart Accents auto-inserts French accents from base letters; Strict requires exact accents"
@@ -768,6 +816,15 @@ export function createStageController(
                 ? `<p class="prompt-hint">💡 ${escapeHtml(item.hint)}</p>`
                 : ''
             }
+            <div id="st-literal-slot">
+              ${
+                prefs.showLiteral && !englishMasked
+                  ? buildLiteralBoxHTML(item, {
+                      showFrenchPairs: session.mode === 'guided' || session.itemCompleted,
+                    })
+                  : ''
+              }
+            </div>
           </div>
 
           <div class="typing-track-shell" id="st-track-shell">
@@ -862,6 +919,12 @@ export function createStageController(
       progressStore.updatePref('voice', next);
       renderActiveStage();
       playCurrentItem(false);
+    });
+
+    container.querySelector('#ctl-literal')?.addEventListener('click', () => {
+      const next = !progressStore.getPrefs().showLiteral;
+      progressStore.updatePref('showLiteral', next);
+      renderActiveStage();
     });
 
     container.querySelector('#ctl-accents')?.addEventListener('click', () => {

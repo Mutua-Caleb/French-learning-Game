@@ -12,6 +12,7 @@ const DEFAULT_STATE = {
     practiceMode: 'guided', // 'guided' | 'translate' | 'dictation'
     showKeyboard: true,
     showFingerZones: true,
+    showLiteral: true,
     keySounds: true,
     autoPlayAudio: true,
   },

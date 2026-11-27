@@ -1,5 +1,6 @@
 import { audioEngine } from '../engine/audioEngine.js';
 import { progressStore } from '../engine/progressStore.js';
+import { getLiteralGloss } from '../engine/literalGloss.js';
 
 export function renderPhrasebookView(container, curriculum) {
   const allEntries = [];
@@ -61,12 +62,14 @@ export function renderPhrasebookView(container, curriculum) {
       .join('');
 
     const cardsHtml = filtered
-      .map(
-        (item) => `
+      .map((item) => {
+        const lit = getLiteralGloss(item.fr).sentence;
+        return `
           <div class="phrase-card">
             <div>
               <div class="phrase-fr">${item.fr}</div>
               <div class="phrase-en">${item.en}</div>
+              <div class="phrase-literal">🔍 Literally: ${lit}</div>
               <div class="phrase-hint">${item.tag} · Lesson ${item.lessonNumber}${item.hint ? ` — ${item.hint}` : ''}</div>
             </div>
             <div class="phrase-play-group">
@@ -87,8 +90,8 @@ export function renderPhrasebookView(container, curriculum) {
               >0.75×</button>
             </div>
           </div>
-        `
-      )
+        `;
+      })
       .join('');
 
     const chapterPillsHtml = curriculum.chapters

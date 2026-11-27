@@ -360,6 +360,84 @@
   color: var(--ink-secondary);
 }
 
+/* Literal Word-for-Word Translation Box */
+.literal-box {
+  margin: 14px auto 0;
+  max-width: 760px;
+  background: #fffdf6;
+  border: 1px solid #f0dfb7;
+  border-radius: 14px;
+  padding: 11px 16px 12px;
+  text-align: center;
+}
+
+.literal-head {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #b45309;
+  margin-bottom: 4px;
+}
+
+.literal-sentence {
+  margin: 0;
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #5c3d0c;
+  line-height: 1.45;
+}
+
+.gloss-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 10px;
+  padding-top: 9px;
+  border-top: 1px dashed #eed9a8;
+}
+
+.gloss-chip {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid #ecdcb6;
+  line-height: 1.2;
+}
+
+.gloss-fr {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--blue-700);
+}
+
+.gloss-lit {
+  font-size: 11px;
+  font-weight: 600;
+  color: #8a5a10;
+  margin-top: 2px;
+}
+
+.phrase-literal {
+  font-size: 12.2px;
+  font-weight: 600;
+  color: #9a5b04;
+  background: #fffbeb;
+  border: 1px solid #f4e2b3;
+  border-radius: 7px;
+  padding: 3px 8px;
+  margin-top: 5px;
+  display: inline-block;
+}
+
 /* Character-by-Character French Typing Track */
 .typing-track-shell {
   position: relative;
