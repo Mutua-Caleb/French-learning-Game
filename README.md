@@ -19,20 +19,21 @@ An immersive French learning game that reimagines touch-typing practice (inspire
 - **Audio Phrasebook & Textbook Grammar Reference**
   - Searchable glossary of all 176 Phase 1 items with instant audio playback, plus interactive grammar tables (`le/la/les`, `mon/ton/son`, possession with `de/du/des`, `avoir`, `être`, and `-ER` verbs).
 
-## Phase 1 Curriculum (`French 1-9-32.pdf`)
+## Curriculum & Practice Sections
 
-| Chapter | Lesson | Topic | PDF Pages |
+### Textbook Lessons (`French 1-9-32.pdf` & `French 1-32-64.pdf` · pp. 9–64)
+
+| Chapter | Lessons | Topics | PDF Pages |
 | :--- | :--- | :--- | :--- |
-| **Chapitre 2: La salle de classe** | 2.1 | Classroom Objects & People | p. 9, 14, 18 |
-| | 2.2 | Classroom Instructions & Questions | pp. 10–11 |
-| | 2.3 | Articles, Possessives & *De* | pp. 12–15 |
-| | 2.4 | Verb *Avoir* (To Have) & Age | pp. 16–17, 21–22 |
-| | 2.5 | Verb *Être* (To Be) & Where Things Are | pp. 17–20 |
-| | 2.6 | Chapter 2 Mastery Challenge | pp. 9–22 |
-| **Chapitre 3: Chez nous** | 3.1 | Home & French Breakfast | pp. 23–24, 27 |
-| | 3.2 | First-Group (*-ER*) Verbs & Infinitives | pp. 24–28 |
-| | 3.3 | House Rooms, *Mon/Ton/Son*, *Voici/Voilà* & *N'est-ce pas?* | pp. 29–32 |
-| | 3.4 | Chapter 3 Exam-Style Challenge | pp. 23–32 |
+| **Chapitre 2: La salle de classe** | 2.1 – 2.6 | Classroom objects, commands, articles, `de`, *avoir*, *être*, prepositions | pp. 9–22 |
+| **Chapitre 3: Chez nous** | 3.1 – 3.4 | Home, French breakfast, `-ER` verbs, rooms, *mon/ton/son*, *voici/voilà*, *n'est-ce pas?* | pp. 23–32 |
+| **Chapitre 4: La vie quotidienne et l'heure** | 4.1 – 4.4 | Reflexive verbs (*se réveiller, se lever, se laver, s'habiller*), telling the time, numbers 13–30, *faire* & *mettre*, chores, negatives (`ne...pas`) | pp. 33–44 |
+| **Chapitre 5: On va à l'école!** | 5.1 – 5.3 | *Aller* & transport, days of the week, school subjects, opinions, colours & adjective agreement | pp. 45–56 |
+| **Chapitre 6: La date, les nombres, les prix** | 6.1 – 6.2 | Months, birthdays, numbers 40–1000, *il faut*, market shopping, *acheter*, *vouloir* & *pouvoir* | pp. 57–64 |
+
+### Additional Dedicated Trainers
+- **Verbs Tab**: 6 progressive core tracks + interactive 4-tense explorer (*Présent, Passé composé, Imparfait, Futur simple*) for the **20 most widely used French verbs**.
+- **Paragraphs Tab**: **11 short 5-sentence French stories** (`P1`–`P11`) designed for the **1. Guided → 2. Translate → 3. Dictation** loop with full-paragraph narration.
 
 ## Getting Started
 

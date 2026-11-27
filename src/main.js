@@ -95,8 +95,8 @@ function buildDailySprintLesson() {
     id: `custom-sprint-${Date.now()}`,
     number: 'Sprint',
     title: 'Mixed Typing Sprint',
-    frenchTitle: 'Entraînement mixte — Chapitres 2 & 3',
-    pages: 'pp. 9–32',
+    frenchTitle: 'Entraînement mixte — Chapitres 2–6',
+    pages: 'pp. 9–64',
     items: pool.slice(0, 12),
   };
 }

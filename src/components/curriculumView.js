@@ -106,12 +106,12 @@ export function renderCurriculumView(container, curriculum, { onSelectLesson, on
   container.innerHTML = `
     <section class="hero-banner">
       <div>
-        <div class="hero-eyebrow">Phase 1 · French 1 Curriculum (pp. 9–32)</div>
+        <div class="hero-eyebrow">French 1 Curriculum · Chapters 2–6 (pp. 9–64)</div>
         <h1>Learn French by Typing Every Word &amp; Sentence</h1>
         <p>
           Build real French recall, spelling, accents, and pronunciation at the same time.
           Start in <strong>Guided</strong> typing flow, graduate to <strong>English → French Recall</strong>,
-          and train your ear with lifelike native French voices.
+          and train your ear with lifelike native Parisian French voices.
         </p>
         <div class="hero-actions">
           <button type="button" class="btn btn-primary" id="hero-continue-btn">
@@ -123,9 +123,9 @@ export function renderCurriculumView(container, curriculum, { onSelectLesson, on
         </div>
       </div>
 
-      <aside class="hero-progress-panel" aria-label="Phase 1 Mastery Overview">
+      <aside class="hero-progress-panel" aria-label="Course Mastery Overview">
         <div class="hero-panel-top">
-          <span class="hero-panel-title">Phase 1 Mastery</span>
+          <span class="hero-panel-title">Course Mastery</span>
           <span class="hero-panel-pct">${completionPct}%</span>
         </div>
         <div class="progress-track">

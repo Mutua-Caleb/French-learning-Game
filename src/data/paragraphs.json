@@ -419,6 +419,162 @@
           "hint": "Double 'r' in nous pourrons (pouvoir future)."
         }
       ]
+    },
+    {
+      "id": "para-9",
+      "number": "P9",
+      "title": "Morning Routine & Chores",
+      "frenchTitle": "Le matin chez Georges et Martine",
+      "sourceLabel": "Ch. 4 · Daily Life & Time",
+      "tenseFocus": "Reflexives, Time & Negatives",
+      "description": "Follow Georges and Martine's morning timetable, chores with faire/mettre, and negatives from Chapter 4 (pp. 33–44).",
+      "fullAudioId": "p9_full",
+      "items": [
+        {
+          "id": "p9_s1",
+          "en": "Usually, Georges wakes up at seven o'clock and Martine gets up at quarter past seven.",
+          "fr": "D'habitude, Georges se réveille à sept heures et Martine se lève à sept heures et quart.",
+          "type": "sentence",
+          "tag": "Sentence 1 · Reflexives & Time",
+          "hint": "From p. 33: se réveiller, se lever, et quart."
+        },
+        {
+          "id": "p9_s2",
+          "en": "Martine gets dressed quickly, and Georges washes at half past seven.",
+          "fr": "Martine s'habille vite, et Georges se lave à sept heures et demie.",
+          "type": "sentence",
+          "tag": "Sentence 2 · S'habiller & Se laver",
+          "hint": "'et demie' = half past (p. 33–35)."
+        },
+        {
+          "id": "p9_s3",
+          "en": "At quarter to eight, Mum lays the table for breakfast.",
+          "fr": "À huit heures moins le quart, maman met la table pour le petit-déjeuner.",
+          "type": "sentence",
+          "tag": "Sentence 3 · Mettre & Time",
+          "hint": "'huit heures moins le quart' = 7:45 (p. 33, 41)."
+        },
+        {
+          "id": "p9_s4",
+          "en": "After breakfast, Dad does the washing-up and I tidy my room.",
+          "fr": "Après le petit-déjeuner, papa fait la vaisselle et je range ma chambre.",
+          "type": "sentence",
+          "tag": "Sentence 4 · Chores (faire)",
+          "hint": "Chores from pp. 39–42."
+        },
+        {
+          "id": "p9_s5",
+          "en": "In the evening, I do my homework, and I do not watch television.",
+          "fr": "Le soir, je fais mes devoirs, et je ne regarde pas la télévision.",
+          "type": "sentence",
+          "tag": "Sentence 5 · Negative (ne...pas)",
+          "hint": "Wrap ne ... pas around 'regarde' (p. 43–44)."
+        }
+      ]
+    },
+    {
+      "id": "para-10",
+      "number": "P10",
+      "title": "Éric's School in Niort",
+      "frenchTitle": "Mon école en France (Éric)",
+      "sourceLabel": "Ch. 5 · On va à l'école!",
+      "tenseFocus": "Aller, Subjects & Adjectives",
+      "description": "Adapted directly from Éric's reading passage in Exercice 5.10 (p. 54) — covering school subjects, transport, opinions, and adjectives.",
+      "fullAudioId": "p10_full",
+      "items": [
+        {
+          "id": "p10_s1",
+          "en": "My name is Éric, I am thirteen years old, and I go to school in France.",
+          "fr": "Je m'appelle Éric, j'ai treize ans et je vais à l'école en France.",
+          "type": "sentence",
+          "tag": "Sentence 1 · Exercice 5.10",
+          "hint": "Use 'aller' (je vais) and 'avoir' for age (p. 54)."
+        },
+        {
+          "id": "p10_s2",
+          "en": "I go to school by bike every Monday, and I like school because I have lots of friends.",
+          "fr": "Je vais à l'école à vélo tous les lundis, et j'aime bien l'école parce que j'ai beaucoup d'amis.",
+          "type": "sentence",
+          "tag": "Sentence 2 · Transport & Days",
+          "hint": "'à vélo' = by bike; 'parce que' = because (pp. 46–54)."
+        },
+        {
+          "id": "p10_s3",
+          "en": "I eat in the canteen; the food is good!",
+          "fr": "Je mange à la cantine; la cuisine est bonne!",
+          "type": "sentence",
+          "tag": "Sentence 3 · Canteen",
+          "hint": "Feminine adjective 'bonne' agrees with 'la cuisine' (p. 54)."
+        },
+        {
+          "id": "p10_s4",
+          "en": "My favourite subject is IT, and I also like English and French.",
+          "fr": "Ma matière préférée, c'est l'informatique, et j'aime aussi l'anglais et le français.",
+          "type": "sentence",
+          "tag": "Sentence 4 · School subjects",
+          "hint": "Feminine 'préférée' agrees with 'ma matière' (p. 54)."
+        },
+        {
+          "id": "p10_s5",
+          "en": "I am good at maths, but I find that the teacher is very strict!",
+          "fr": "Je suis fort en maths, mais je trouve que le prof est très sévère!",
+          "type": "sentence",
+          "tag": "Sentence 5 · Opinions",
+          "hint": "Directly from Éric's passage on p. 54."
+        }
+      ]
+    },
+    {
+      "id": "para-11",
+      "number": "P11",
+      "title": "Mum's Birthday Shopping",
+      "frenchTitle": "L'anniversaire de maman",
+      "sourceLabel": "Ch. 6 · Dates, Numbers & Prices",
+      "tenseFocus": "Acheter, Vouloir, Pouvoir",
+      "description": "Based on Philippe and Claire's birthday shopping story in Chapter 6 (pp. 57–64) — dates, prices, acheter, vouloir, and pouvoir.",
+      "fullAudioId": "p11_full",
+      "items": [
+        {
+          "id": "p11_s1",
+          "en": "Today is the first of July, and it is Mum's birthday!",
+          "fr": "Aujourd'hui, on est le premier juillet, et c'est l'anniversaire de maman!",
+          "type": "sentence",
+          "tag": "Sentence 1 · Dates & Months",
+          "hint": "'le premier' for the 1st of the month (p. 57)."
+        },
+        {
+          "id": "p11_s2",
+          "en": "Philippe wants to buy a birthday card and a nice present.",
+          "fr": "Philippe veut acheter une carte d'anniversaire et un beau cadeau.",
+          "type": "sentence",
+          "tag": "Sentence 2 · Vouloir + Acheter",
+          "hint": "From Exercices 6.1 & 6.10 (pp. 58, 64)."
+        },
+        {
+          "id": "p11_s3",
+          "en": "At the market, we buy two kilos of apples and a melon.",
+          "fr": "Au marché, nous achetons deux kilos de pommes et un melon.",
+          "type": "sentence",
+          "tag": "Sentence 3 · Market (acheter)",
+          "hint": "No accent on 'e' in nous achetons (p. 60–62)."
+        },
+        {
+          "id": "p11_s4",
+          "en": "Philippe cannot buy the present because he does not have enough money.",
+          "fr": "Philippe ne peut pas acheter le cadeau parce qu'il n'a pas assez d'argent.",
+          "type": "sentence",
+          "tag": "Sentence 4 · Pouvoir (neg.)",
+          "hint": "From Exercice 6.10 (p. 64)."
+        },
+        {
+          "id": "p11_s5",
+          "en": "Claire can help her brother, and we are very happy!",
+          "fr": "Claire peut aider son frère, et nous sommes très heureux!",
+          "type": "sentence",
+          "tag": "Sentence 5 · Pouvoir & Happy",
+          "hint": "'frère' = brother (p. 64); 'heureux' = happy (p. 55)."
+        }
+      ]
     }
   ]
 }

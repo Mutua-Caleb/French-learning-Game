@@ -91,6 +91,13 @@ export function renderPhrasebookView(container, curriculum) {
       )
       .join('');
 
+    const chapterPillsHtml = curriculum.chapters
+      .map(
+        (ch) =>
+          `<button type="button" class="toggle-pill ${filterChapter === ch.id ? 'is-on' : ''}" data-filter-ch="${ch.id}">Ch. ${ch.number}</button>`
+      )
+      .join('');
+
     container.innerHTML = `
       <div style="margin-bottom:20px; display:flex; align-items:flex-end; justify-content:space-between; gap:12px; flex-wrap:wrap;">
         <div>
@@ -98,7 +105,7 @@ export function renderPhrasebookView(container, curriculum) {
             Audio Phrasebook &amp; Grammar Reference
           </h1>
           <p style="margin:0; color:var(--ink-secondary); font-size:14.5px;">
-            Every key table, word, and sentence from <strong>French 1-9-32.pdf</strong> with studio-quality native Parisian French pronunciation.
+            Every key table, word, and sentence from <strong>Chapters 2–6 (pp. 9–64)</strong> with studio-quality native Parisian French pronunciation.
           </p>
         </div>
         <button type="button" class="toggle-pill is-on" id="pb-voice-toggle">
@@ -123,8 +130,7 @@ export function renderPhrasebookView(container, curriculum) {
           </div>
           <div class="filter-pills">
             <button type="button" class="toggle-pill ${filterChapter === 'all' ? 'is-on' : ''}" data-filter-ch="all">All (${allEntries.length})</button>
-            <button type="button" class="toggle-pill ${filterChapter === 'ch2' ? 'is-on' : ''}" data-filter-ch="ch2">Ch. 2: Classroom</button>
-            <button type="button" class="toggle-pill ${filterChapter === 'ch3' ? 'is-on' : ''}" data-filter-ch="ch3">Ch. 3: Chez nous</button>
+            ${chapterPillsHtml}
           </div>
         </div>
 

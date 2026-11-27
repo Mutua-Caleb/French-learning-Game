@@ -1,8 +1,8 @@
 {
   "meta": {
-    "title": "Phase 1 — French 1 (Chapters 2 & 3)",
-    "source": "French 1-9-32.pdf (Pages 9–32)",
-    "version": "1.0.0"
+    "title": "French 1 — Chapters 2–6 (Pages 9–64)",
+    "source": "French 1-9-32.pdf & French 1-32-64.pdf (Pages 9–64)",
+    "version": "2.0.0"
   },
   "chapters": [
     {
@@ -312,6 +312,288 @@
           ]
         }
       ]
+    },
+    {
+      "id": "ch4",
+      "number": 4,
+      "title": "La vie quotidienne et l'heure",
+      "englishTitle": "Daily Life & Telling the Time",
+      "pages": "pp. 33–44",
+      "description": "Master reflexive verbs (se réveiller, se lever, se laver, s'habiller), telling the time, faire & mettre, home chores, and negatives (ne...pas).",
+      "accentColor": "#16A34A",
+      "lessons": [
+        {
+          "id": "ch4-l1",
+          "number": "4.1",
+          "title": "Reflexive Verbs & Morning Routine",
+          "frenchTitle": "Les verbes pronominaux",
+          "pages": "pp. 33–35",
+          "focus": "Sentences",
+          "description": "Practice daily 'self' verbs (se réveiller, se lever, se laver, s'habiller) and follow Georges and Martine's morning routine.",
+          "items": [
+            { "id": "c4_se_reveiller", "en": "to wake up", "fr": "se réveiller", "type": "word", "tag": "Reflexive verb", "hint": "Reflexive verbs start with 'se' or s' (p. 34)." },
+            { "id": "c4_se_lever", "en": "to get up", "fr": "se lever", "type": "word", "tag": "Reflexive verb", "hint": "Takes a grave accent è in je me lève / elle se lève." },
+            { "id": "c4_se_laver", "en": "to wash oneself", "fr": "se laver", "type": "word", "tag": "Reflexive verb", "hint": "Model reflexive verb on p. 34." },
+            { "id": "c4_s_habiller", "en": "to get dressed", "fr": "s'habiller", "type": "word", "tag": "Reflexive verb", "hint": "'se' becomes s' before silent 'h'." },
+            { "id": "c4_je_me_lave", "en": "I wash / I am washing myself.", "fr": "Je me lave.", "type": "sentence", "tag": "Reflexive (je)", "hint": "'je' pairs with 'me' (p. 34)." },
+            { "id": "c4_tu_t_habilles", "en": "You (sing.) get dressed.", "fr": "Tu t'habilles.", "type": "sentence", "tag": "Reflexive (tu)", "hint": "'te' shortens to t' before silent 'h' (p. 35)." },
+            { "id": "c4_georges_se_reveille", "en": "Georges wakes up at seven o'clock.", "fr": "Georges se réveille à sept heures.", "type": "sentence", "tag": "Morning routine", "hint": "Photo caption on p. 33." },
+            { "id": "c4_martine_se_leve", "en": "Martine gets up at quarter past seven.", "fr": "Martine se lève à sept heures et quart.", "type": "sentence", "tag": "Morning routine", "hint": "'et quart' = quarter past (p. 33)." },
+            { "id": "c4_martine_s_habille", "en": "Martine gets dressed at seven twenty.", "fr": "Martine s'habille à sept heures vingt.", "type": "sentence", "tag": "Morning routine", "hint": "Photo caption on p. 33." },
+            { "id": "c4_georges_se_lave", "en": "Georges washes at half past seven.", "fr": "Georges se lave à sept heures et demie.", "type": "sentence", "tag": "Morning routine", "hint": "'et demie' = half past (p. 33)." },
+            { "id": "c4_descendent", "en": "Martine and Georges come downstairs at quarter to eight.", "fr": "Martine et Georges descendent à huit heures moins le quart.", "type": "sentence", "tag": "Morning routine", "hint": "'moins le quart' = quarter to (p. 33)." },
+            { "id": "c4_heure_petit_dejeuner", "en": "It is eight o'clock. It's breakfast time.", "fr": "Il est huit heures. C'est l'heure du petit-déjeuner.", "type": "sentence", "tag": "Morning routine", "hint": "Photo caption on p. 33." },
+            { "id": "c4_elle_se_leve_chambre", "en": "She gets up in her bedroom.", "fr": "Elle se lève dans sa chambre.", "type": "sentence", "tag": "Exercice 4.1", "hint": "From Exercice 4.1 (p. 34)." },
+            { "id": "c4_nous_nous_habillons", "en": "We get dressed before breakfast.", "fr": "Nous nous habillons avant le petit-déjeuner.", "type": "sentence", "tag": "Reflexive (nous)", "hint": "'nous' takes double 'nous nous' (p. 34)." },
+            { "id": "c4_vous_vous_lavez", "en": "You (pl.) wash.", "fr": "Vous vous lavez.", "type": "sentence", "tag": "Reflexive (vous)", "hint": "'vous' takes double 'vous vous' (p. 34)." },
+            { "id": "c4_ils_se_lavent", "en": "They (m.) wash.", "fr": "Ils se lavent.", "type": "sentence", "tag": "Reflexive (ils)", "hint": "Table on p. 34." }
+          ]
+        },
+        {
+          "id": "ch4-l2",
+          "number": "4.2",
+          "title": "Telling the Time & Numbers 13–30",
+          "frenchTitle": "Quelle heure est-il?",
+          "pages": "pp. 35–39",
+          "focus": "Words & Sentences",
+          "description": "Ask and tell the time (o'clock, quarter past, half past, quarter to, noon, midnight) and type numbers 13 to 30.",
+          "items": [
+            { "id": "c4_quelle_heure_est_il", "en": "What time is it?", "fr": "Quelle heure est-il?", "type": "sentence", "tag": "Key question", "hint": "Standard way to ask the time (p. 35)." },
+            { "id": "c4_il_est_trois_heures", "en": "It is three o'clock.", "fr": "Il est trois heures.", "type": "sentence", "tag": "Telling time", "hint": "Basic formula: il est ... heures (p. 35)." },
+            { "id": "c4_il_est_midi", "en": "It is noon (12:00).", "fr": "Il est midi.", "type": "sentence", "tag": "Telling time", "hint": "No 'heures' after midi or minuit (p. 35–36)." },
+            { "id": "c4_il_est_minuit", "en": "It is midnight (12:00).", "fr": "Il est minuit.", "type": "sentence", "tag": "Telling time", "hint": "Photo caption on p. 36." },
+            { "id": "c4_dix_heures_et_demie", "en": "It is half past ten.", "fr": "Il est dix heures et demie.", "type": "sentence", "tag": "Telling time", "hint": "Example on p. 35." },
+            { "id": "c4_deux_heures_et_quart", "en": "It is quarter past two.", "fr": "Il est deux heures et quart.", "type": "sentence", "tag": "Telling time", "hint": "Example on p. 35." },
+            { "id": "c4_quatre_heures_moins_le_quart", "en": "It is quarter to four.", "fr": "Il est quatre heures moins le quart.", "type": "sentence", "tag": "Telling time", "hint": "Literally 'four hours minus the quarter' (p. 35)." },
+            { "id": "c4_trois_heures_apres_midi", "en": "It is three o'clock in the afternoon.", "fr": "Il est trois heures de l'après-midi.", "type": "sentence", "tag": "Time of day", "hint": "du matin / de l'après-midi / du soir (p. 36)." },
+            { "id": "c4_treize", "en": "thirteen (13)", "fr": "treize", "type": "word", "tag": "Number", "hint": "Numbers 13–30 on p. 36." },
+            { "id": "c4_quatorze", "en": "fourteen (14)", "fr": "quatorze", "type": "word", "tag": "Number", "hint": "Numbers 13–30 on p. 36." },
+            { "id": "c4_quinze", "en": "fifteen (15)", "fr": "quinze", "type": "word", "tag": "Number", "hint": "Needed for quarter-hour digital times (p. 36)." },
+            { "id": "c4_seize", "en": "sixteen (16)", "fr": "seize", "type": "word", "tag": "Number", "hint": "Numbers 13–30 on p. 36." },
+            { "id": "c4_dix_huit", "en": "eighteen (18)", "fr": "dix-huit", "type": "word", "tag": "Number", "hint": "Hyphenated (p. 36)." },
+            { "id": "c4_vingt_et_un", "en": "twenty-one (21)", "fr": "vingt et un", "type": "word", "tag": "Number", "hint": "Uses 'et' without hyphens for 21 (p. 36)." },
+            { "id": "c4_trente", "en": "thirty (30)", "fr": "trente", "type": "word", "tag": "Number", "hint": "Needed for half-hour digital times (p. 36)." },
+            { "id": "c4_je_suis_en_retard", "en": "Oh no! I am late!", "fr": "Ah non! Je suis en retard!", "type": "sentence", "tag": "Dialogue", "hint": "Papa's line in Exercice 4.4 (p. 38)." },
+            { "id": "c4_tu_arrives_a_quelle_heure", "en": "What time do you arrive?", "fr": "Tu arrives à quelle heure?", "type": "sentence", "tag": "Question", "hint": "Use 'à' for 'at' what time (p. 39)." },
+            { "id": "c4_d_habitude_je_me_leve", "en": "Usually, I get up at seven o'clock.", "fr": "D'habitude, je me lève à sept heures.", "type": "sentence", "tag": "Role play", "hint": "'d'habitude' = usually (p. 39)." }
+          ]
+        },
+        {
+          "id": "ch4-l3",
+          "number": "4.3",
+          "title": "Faire, Mettre & Helping at Home",
+          "frenchTitle": "Aider à la maison",
+          "pages": "pp. 39–42",
+          "focus": "Phrases & Sentences",
+          "description": "Use faire (to do/make) and mettre (to put/lay) to talk about housework, sports, hobbies, and how often you help at home.",
+          "items": [
+            { "id": "c4_faire_la_cuisine", "en": "to do the cooking", "fr": "faire la cuisine", "type": "phrase", "tag": "faire expression", "hint": "Housework expression on p. 39." },
+            { "id": "c4_faire_la_vaisselle", "en": "to do the washing-up", "fr": "faire la vaisselle", "type": "phrase", "tag": "faire expression", "hint": "Housework expression on p. 39." },
+            { "id": "c4_faire_le_menage", "en": "to do the housework", "fr": "faire le ménage", "type": "phrase", "tag": "faire expression", "hint": "Acute accent é in ménage (p. 39)." },
+            { "id": "c4_faire_des_courses", "en": "to go shopping", "fr": "faire des courses", "type": "phrase", "tag": "faire expression", "hint": "French uses 'faire' where English uses 'go' (p. 40)." },
+            { "id": "c4_faire_une_promenade", "en": "to go for a walk", "fr": "faire une promenade", "type": "phrase", "tag": "faire expression", "hint": "Expression on p. 40." },
+            { "id": "c4_sortir_les_poubelles", "en": "to put the bins out", "fr": "sortir les poubelles", "type": "phrase", "tag": "Chore", "hint": "Exercice 4.6 & 4.11 (p. 40, 42)." },
+            { "id": "c4_ranger_ma_chambre", "en": "to tidy my room", "fr": "ranger ma chambre", "type": "phrase", "tag": "Chore", "hint": "Exercice 4.11 (p. 42)." },
+            { "id": "c4_passer_l_aspirateur", "en": "to vacuum", "fr": "passer l'aspirateur", "type": "phrase", "tag": "Chore", "hint": "Exercice 4.11 (p. 42)." },
+            { "id": "c4_promener_le_chien", "en": "to walk the dog", "fr": "promener le chien", "type": "phrase", "tag": "Chore", "hint": "Exercice 4.11 (p. 42)." },
+            { "id": "c4_nicolas_fait_son_lit", "en": "Nicolas makes his bed.", "fr": "Nicolas fait son lit.", "type": "sentence", "tag": "faire (il)", "hint": "Example on p. 39." },
+            { "id": "c4_je_fais_mes_devoirs", "en": "I do my homework at seven p.m.", "fr": "Je fais mes devoirs à sept heures du soir.", "type": "sentence", "tag": "faire (je)", "hint": "Exercice 4.7 (p. 40)." },
+            { "id": "c4_nous_faisons_des_courses", "en": "We go shopping every day.", "fr": "Nous faisons des courses tous les jours.", "type": "sentence", "tag": "faire (nous)", "hint": "'tous les jours' = every day (p. 40)." },
+            { "id": "c4_papa_fait_la_vaisselle", "en": "Dad does the washing-up after breakfast.", "fr": "Papa fait la vaisselle après le petit-déjeuner.", "type": "sentence", "tag": "faire (il)", "hint": "Exercice 4.7 (p. 40)." },
+            { "id": "c4_vous_faites_du_ski", "en": "You (pl.) go skiing in the Alps.", "fr": "Vous faites du ski dans les Alpes.", "type": "sentence", "tag": "faire (vous)", "hint": "Watch the irregular 'vous faites' (p. 39–40)." },
+            { "id": "c4_ils_font_une_promenade", "en": "They go for a walk after lunch.", "fr": "Ils font une promenade après le déjeuner.", "type": "sentence", "tag": "faire (ils)", "hint": "Exercice 4.7 (p. 40)." },
+            { "id": "c4_philippe_fait_du_cheval", "en": "Philippe goes horse-riding in the forest.", "fr": "Philippe fait du cheval dans la forêt.", "type": "sentence", "tag": "faire (il)", "hint": "Exercice 4.8 (p. 41) — circumflex ê in forêt." },
+            { "id": "c4_maman_met_la_table", "en": "Mum lays the table for breakfast.", "fr": "Maman met la table pour le petit-déjeuner.", "type": "sentence", "tag": "mettre (elle)", "hint": "Exercice 4.10 (p. 41) — singular 'met'." },
+            { "id": "c4_nous_mettons_les_crayons", "en": "We put Pierre's pencils in his pencil case.", "fr": "Nous mettons les crayons de Pierre dans sa trousse.", "type": "sentence", "tag": "mettre (nous)", "hint": "Double 't' in plural mettons/mettez/mettent (p. 41)." }
+          ]
+        },
+        {
+          "id": "ch4-l4",
+          "number": "4.4",
+          "title": "The Negative (ne ... pas)",
+          "frenchTitle": "La négation",
+          "pages": "pp. 42–44",
+          "focus": "Sentences",
+          "description": "Wrap ne ... pas (or n' ... pas before a vowel) around any French verb to say what doesn't happen.",
+          "items": [
+            { "id": "c4_elle_ne_nage_pas", "en": "She does not swim.", "fr": "Elle ne nage pas.", "type": "sentence", "tag": "Negative", "hint": "Place 'ne' before the verb and 'pas' after it (p. 43)." },
+            { "id": "c4_ils_n_ecoutent_pas", "en": "They do not listen.", "fr": "Ils n'écoutent pas.", "type": "sentence", "tag": "Negative (n')", "hint": "'ne' shortens to n' before a vowel or silent 'h' (p. 43)." },
+            { "id": "c4_il_ne_mange_pas", "en": "He does not eat.", "fr": "Il ne mange pas.", "type": "sentence", "tag": "Negative", "hint": "Table on p. 43." },
+            { "id": "c4_il_n_ecoute_pas", "en": "He is not listening.", "fr": "Il n'écoute pas.", "type": "sentence", "tag": "Negative (n')", "hint": "Table on p. 43." },
+            { "id": "c4_marie_yvonne", "en": "Marie-Yvonne does not eat a lot.", "fr": "Marie-Yvonne ne mange pas beaucoup.", "type": "sentence", "tag": "Negative", "hint": "Example on p. 43." },
+            { "id": "c4_ca_depend", "en": "it depends", "fr": "ça dépend", "type": "phrase", "tag": "Expression", "hint": "Cedilla ç and acute é (p. 43)." },
+            { "id": "c4_patrick_ne_fait_pas", "en": "Patrick does not do his homework.", "fr": "Patrick ne fait pas ses devoirs.", "type": "sentence", "tag": "Exercice 4.13", "hint": "Negative form of Exercice 4.13 #1 (p. 44)." },
+            { "id": "c4_melanie_ne_passe_pas", "en": "Mélanie does not vacuum.", "fr": "Mélanie ne passe pas l'aspirateur.", "type": "sentence", "tag": "Exercice 4.13", "hint": "Negative form of Exercice 4.13 #2 (p. 44)." },
+            { "id": "c4_linda_ne_fait_pas", "en": "Linda does not do the washing-up.", "fr": "Linda ne fait pas la vaisselle.", "type": "sentence", "tag": "Exercice 4.13", "hint": "Negative form of Exercice 4.13 #3 (p. 44)." },
+            { "id": "c4_je_ne_sors_pas", "en": "I do not put the bins out.", "fr": "Je ne sors pas les poubelles.", "type": "sentence", "tag": "Exercice 4.13", "hint": "Negative form of Exercice 4.13 #4 (p. 44)." },
+            { "id": "c4_je_ne_fais_pas_devoirs_ecole", "en": "Usually, I don't do my homework at school.", "fr": "D'habitude, je ne fais pas mes devoirs à l'école.", "type": "sentence", "tag": "Exercice 4.14", "hint": "Exam-style translation on p. 44." },
+            { "id": "c4_mon_pere_ne_regarde_pas", "en": "My father does not watch TV in the evening.", "fr": "Mon père ne regarde pas la télévision le soir.", "type": "sentence", "tag": "Exercice 4.14", "hint": "'le soir' = in the evening (p. 43–44)." },
+            { "id": "c4_paul_tu_n_aimes_pas", "en": "Paul, you don't like your coffee?", "fr": "Paul, tu n'aimes pas ton café?", "type": "sentence", "tag": "Exercice 4.14", "hint": "Use n' before 'aimes' (p. 44)." },
+            { "id": "c4_je_n_ecoute_pas_radio", "en": "I do not listen to the radio.", "fr": "Je n'écoute pas la radio.", "type": "sentence", "tag": "Exercice 4.14", "hint": "Exam-style translation on p. 44." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch5",
+      "number": 5,
+      "title": "On va à l'école!",
+      "englishTitle": "Going to School & Describing Things",
+      "pages": "pp. 45–56",
+      "description": "Learn the verb aller, transport, days of the week, school subjects, opinions, colours, and masculine/feminine adjectives.",
+      "accentColor": "#8B5CF6",
+      "lessons": [
+        {
+          "id": "ch5-l1",
+          "number": "5.1",
+          "title": "Verb Aller & Transport",
+          "frenchTitle": "Aller et les transports",
+          "pages": "pp. 45–48",
+          "focus": "Phrases & Sentences",
+          "description": "Say how you travel to school and around town using aller with en (enclosed vehicles) and à (bike, foot, motorbike).",
+          "items": [
+            { "id": "c5_en_voiture", "en": "by car", "fr": "en voiture", "type": "phrase", "tag": "Transport", "hint": "Use 'en' for enclosed transport (p. 46)." },
+            { "id": "c5_a_velo", "en": "by bike", "fr": "à vélo", "type": "phrase", "tag": "Transport", "hint": "Use 'à' for bike and on foot (p. 46)." },
+            { "id": "c5_en_train", "en": "by train", "fr": "en train", "type": "phrase", "tag": "Transport", "hint": "Transport vocabulary on p. 46." },
+            { "id": "c5_en_bateau", "en": "by boat", "fr": "en bateau", "type": "phrase", "tag": "Transport", "hint": "Transport vocabulary on p. 46." },
+            { "id": "c5_a_pied", "en": "on foot", "fr": "à pied", "type": "phrase", "tag": "Transport", "hint": "Silent 'd' in pied (p. 46)." },
+            { "id": "c5_en_avion", "en": "by plane", "fr": "en avion", "type": "phrase", "tag": "Transport", "hint": "Transport vocabulary on p. 46." },
+            { "id": "c5_en_car", "en": "by coach", "fr": "en car", "type": "phrase", "tag": "Transport", "hint": "Transport vocabulary on p. 46." },
+            { "id": "c5_en_metro", "en": "by underground (metro)", "fr": "en métro", "type": "phrase", "tag": "Transport", "hint": "Extra transport on p. 47." },
+            { "id": "c5_tu_vas_en_voiture", "en": "Do you go to school by car?", "fr": "Tu vas à l'école en voiture?", "type": "sentence", "tag": "aller (tu)", "hint": "Dialogue on p. 45." },
+            { "id": "c5_je_vais_en_train", "en": "No, I go to school by train. I live far away.", "fr": "Non, je vais à l'école en train. J'habite loin.", "type": "sentence", "tag": "aller (je)", "hint": "'loin' = far away (p. 45)." },
+            { "id": "c5_nicolas_va_en_taxi", "en": "Nicolas goes to school by taxi.", "fr": "Nicolas va à l'école en taxi.", "type": "sentence", "tag": "aller (il)", "hint": "Example in Exercice 5.1 (p. 47)." },
+            { "id": "c5_nous_allons_a_paris", "en": "We are going to Paris by train.", "fr": "Nous allons à Paris en train.", "type": "sentence", "tag": "aller (nous)", "hint": "Exercice 5.1 (p. 47)." },
+            { "id": "c5_vous_allez_a_velo", "en": "You (pl.) go to school by bike.", "fr": "Vous allez à l'école à vélo.", "type": "sentence", "tag": "aller (vous)", "hint": "Exercice 5.1 (p. 47)." },
+            { "id": "c5_ils_vont_en_bateau", "en": "They are going to Calais by boat.", "fr": "Ils vont à Calais en bateau.", "type": "sentence", "tag": "aller (ils)", "hint": "Exercice 5.1 (p. 47)." },
+            { "id": "c5_je_vais_chez_moi", "en": "I go home on foot.", "fr": "Je vais chez moi à pied.", "type": "sentence", "tag": "aller (je)", "hint": "Exercice 5.1 (p. 47) — 'chez moi' = to my home." },
+            { "id": "c5_comment_aimes_tu_voyager", "en": "How do you like to travel?", "fr": "Comment aimes-tu voyager?", "type": "sentence", "tag": "Question", "hint": "'comment' = how (p. 48)." }
+          ]
+        },
+        {
+          "id": "ch5-l2",
+          "number": "5.2",
+          "title": "Days of the Week & School Subjects",
+          "frenchTitle": "Les jours et les matières scolaires",
+          "pages": "pp. 48–51, 53–54",
+          "focus": "Words & Sentences",
+          "description": "Type all 7 days of the week, school subjects, and opinions about what you love, hate, or are good at.",
+          "items": [
+            { "id": "c5_lundi", "en": "Monday", "fr": "lundi", "type": "word", "tag": "Day of week", "hint": "Days of the week are lowercase in French (p. 48)." },
+            { "id": "c5_mardi", "en": "Tuesday", "fr": "mardi", "type": "word", "tag": "Day of week", "hint": "Days of the week (p. 48)." },
+            { "id": "c5_mercredi", "en": "Wednesday", "fr": "mercredi", "type": "word", "tag": "Day of week", "hint": "Days of the week (p. 48)." },
+            { "id": "c5_vendredi", "en": "Friday", "fr": "vendredi", "type": "word", "tag": "Day of week", "hint": "Days of the week (p. 48)." },
+            { "id": "c5_samedi", "en": "Saturday", "fr": "samedi", "type": "word", "tag": "Day of week", "hint": "Days of the week (p. 48)." },
+            { "id": "c5_dimanche", "en": "Sunday", "fr": "dimanche", "type": "word", "tag": "Day of week", "hint": "Days of the week (p. 48)." },
+            { "id": "c5_les_maths", "en": "maths", "fr": "les maths", "type": "word", "tag": "School subject", "hint": "School subjects on p. 49." },
+            { "id": "c5_les_sciences", "en": "science", "fr": "les sciences", "type": "word", "tag": "School subject", "hint": "Plural in French (p. 49)." },
+            { "id": "c5_l_histoire_geo", "en": "history and geography", "fr": "l'histoire-géo", "type": "word", "tag": "School subject", "hint": "Combined subject in French schools (p. 49)." },
+            { "id": "c5_l_informatique", "en": "IT / computing", "fr": "l'informatique", "type": "word", "tag": "School subject", "hint": "School subject on p. 49." },
+            { "id": "c5_le_dessin", "en": "drawing / art", "fr": "le dessin", "type": "word", "tag": "School subject", "hint": "School subject on p. 49." },
+            { "id": "c5_la_musique", "en": "music", "fr": "la musique", "type": "word", "tag": "School subject", "hint": "School subject on p. 49." },
+            { "id": "c5_je_vais_tous_les_lundis", "en": "I go to school every Monday.", "fr": "Je vais à l'école tous les lundis.", "type": "sentence", "tag": "Days rule", "hint": "'tous les + plural day' = every Monday (p. 49)." },
+            { "id": "c5_ma_matiere_preferee", "en": "My favourite subject is IT.", "fr": "Ma matière préférée, c'est l'informatique.", "type": "sentence", "tag": "Opinion", "hint": "From Éric's passage in Exercice 5.10 (p. 54)." },
+            { "id": "c5_paul_deteste_allemand", "en": "Paul hates German.", "fr": "Paul déteste l'allemand.", "type": "sentence", "tag": "Opinion", "hint": "Exercice 5.3 (p. 50)." },
+            { "id": "c5_je_suis_fort_en_maths", "en": "I am good at maths.", "fr": "Je suis fort en maths.", "type": "sentence", "tag": "Opinion", "hint": "'fort(e) en' = good at a subject (p. 54)." },
+            { "id": "c5_les_amis_discutent", "en": "The friends chat in the playground during break.", "fr": "Les amis discutent dans la cour pendant la pause.", "type": "sentence", "tag": "School life", "hint": "'discuter' = to chat; 'la pause' = break (p. 50)." },
+            { "id": "c5_je_mange_a_la_cantine", "en": "I eat in the canteen.", "fr": "Je mange à la cantine.", "type": "sentence", "tag": "School life", "hint": "From Éric's passage on p. 54." }
+          ]
+        },
+        {
+          "id": "ch5-l3",
+          "number": "5.3",
+          "title": "Adjectives, Colours & Agreement",
+          "frenchTitle": "Les adjectifs et les couleurs",
+          "pages": "pp. 51–56",
+          "focus": "Words & Sentences",
+          "description": "Describe people and objects with colours (placed after the noun) and master regular & irregular feminine adjective endings.",
+          "items": [
+            { "id": "c5_un_crayon_rouge", "en": "a red pencil", "fr": "un crayon rouge", "type": "phrase", "tag": "Colour order", "hint": "Adjectives normally come AFTER the noun in French (p. 52)." },
+            { "id": "c5_un_velo_rose", "en": "It is a pink bike.", "fr": "C'est un vélo rose.", "type": "sentence", "tag": "Colour", "hint": "Exercice 5.7 (p. 53)." },
+            { "id": "c5_un_crayon_jaune", "en": "Is it a yellow pencil?", "fr": "C'est un crayon jaune?", "type": "sentence", "tag": "Colour", "hint": "Guessing game in Exercice 5.6 (p. 52)." },
+            { "id": "c5_la_maison_blanche_noire", "en": "The house is white and black.", "fr": "La maison est blanche et noire.", "type": "sentence", "tag": "Feminine colour", "hint": "Exercice 5.11 (p. 54) — blanc → blanche." },
+            { "id": "c5_une_voiture_bleue", "en": "She has a blue car.", "fr": "Elle a une voiture bleue.", "type": "sentence", "tag": "Feminine colour", "hint": "Add -e to bleu for feminine 'voiture' (p. 55)." },
+            { "id": "c5_paul_est_grand", "en": "Paul is tall. Marie is small.", "fr": "Paul est grand. Marie est petite.", "type": "sentence", "tag": "Agreement", "hint": "Add -e to make regular adjectives feminine (p. 52)." },
+            { "id": "c5_anne_est_intelligente", "en": "Anne is intelligent.", "fr": "Anne est intelligente.", "type": "sentence", "tag": "Agreement", "hint": "Example on p. 51." },
+            { "id": "c5_claire_est_francaise", "en": "Claire is French.", "fr": "Claire est française.", "type": "sentence", "tag": "Agreement", "hint": "Exercice 5.11 (p. 54)." },
+            { "id": "c5_le_prof_est_severe", "en": "The teacher is very strict.", "fr": "Le prof est très sévère.", "type": "sentence", "tag": "Adjective", "hint": "Adjectives ending in -e stay the same in feminine (p. 51)." },
+            { "id": "c5_le_garcon_est_paresseux", "en": "The boy is lazy.", "fr": "Le garçon est paresseux.", "type": "sentence", "tag": "-x / -se pattern", "hint": "Exercice 5.13 (p. 56) — feminine is paresseuse." },
+            { "id": "c5_la_fille_est_heureuse", "en": "The girl is happy.", "fr": "La fille est heureuse.", "type": "sentence", "tag": "-x → -se", "hint": "Adjectives ending in -x change to -se in feminine (p. 55–56)." },
+            { "id": "c5_ma_trousse_est_neuve", "en": "My pencil case is brand new.", "fr": "Ma trousse est neuve.", "type": "sentence", "tag": "-f → -ve", "hint": "Adjectives ending in -f change to -ve: neuf → neuve (p. 55–56)." },
+            { "id": "c5_elle_est_sportive", "en": "She is sporty and active.", "fr": "Elle est sportive et active.", "type": "sentence", "tag": "-f → -ve", "hint": "sportif → sportive, actif → active (p. 55)." },
+            { "id": "c5_mon_pere_beau_mere_belle", "en": "My father is handsome and my mother is beautiful.", "fr": "Mon père est beau et ma mère est belle.", "type": "sentence", "tag": "Irregular adj.", "hint": "Exercice 5.13 #7 (p. 56) — beau / belle." },
+            { "id": "c5_ma_grand_mere_vieille", "en": "My grandmother is old.", "fr": "Ma grand-mère est vieille.", "type": "sentence", "tag": "Irregular adj.", "hint": "Exercice 5.13 #9 (p. 56) — vieux / vieille." },
+            { "id": "c5_le_professeur_nouveau", "en": "The teacher is new.", "fr": "Le professeur est nouveau.", "type": "sentence", "tag": "Irregular adj.", "hint": "nouveau / nouvelle (nouvel before a vowel, p. 56)." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch6",
+      "number": 6,
+      "title": "La date, les nombres, les prix",
+      "englishTitle": "Dates, Numbers & Shopping",
+      "pages": "pp. 57–64",
+      "description": "Type months, birthdays, numbers up to 1000, market shopping with acheter, il faut, vouloir, and pouvoir.",
+      "accentColor": "#EA580C",
+      "lessons": [
+        {
+          "id": "ch6-l1",
+          "number": "6.1",
+          "title": "Months, Birthdays & Numbers 40–1000",
+          "frenchTitle": "Les mois et les grands nombres",
+          "pages": "pp. 57–60",
+          "focus": "Words & Sentences",
+          "description": "Master all 12 French months, say when your birthday is, and type French numbers from 40 to 1000.",
+          "items": [
+            { "id": "c6_janvier", "en": "January", "fr": "janvier", "type": "word", "tag": "Month", "hint": "Months aren't capitalized in French (p. 57)." },
+            { "id": "c6_fevrier", "en": "February", "fr": "février", "type": "word", "tag": "Month", "hint": "Acute accent on é (p. 57)." },
+            { "id": "c6_avril", "en": "April", "fr": "avril", "type": "word", "tag": "Month", "hint": "Month vocabulary on p. 57." },
+            { "id": "c6_juillet", "en": "July", "fr": "juillet", "type": "word", "tag": "Month", "hint": "Double 'l' in juillet (p. 57)." },
+            { "id": "c6_aout", "en": "August", "fr": "août", "type": "word", "tag": "Month", "hint": "Circumflex accent on û (p. 57)." },
+            { "id": "c6_decembre", "en": "December", "fr": "décembre", "type": "word", "tag": "Month", "hint": "Acute accent on é (p. 57)." },
+            { "id": "c6_mon_anniversaire_janvier", "en": "My birthday is the first of January.", "fr": "Mon anniversaire est le premier janvier.", "type": "sentence", "tag": "Birthday", "hint": "Use 'le premier' only for the 1st of a month (p. 57)." },
+            { "id": "c6_cest_quand_anniversaire", "en": "When is your birthday?", "fr": "C'est quand, ton anniversaire?", "type": "sentence", "tag": "Question", "hint": "Dialogue on p. 57." },
+            { "id": "c6_quelle_est_la_date", "en": "What is the date today?", "fr": "Quelle est la date aujourd'hui?", "type": "sentence", "tag": "Question", "hint": "Dialogue on p. 57." },
+            { "id": "c6_quarante", "en": "forty (40)", "fr": "quarante", "type": "word", "tag": "Number", "hint": "Numbers up to 1000 on p. 59." },
+            { "id": "c6_cinquante", "en": "fifty (50)", "fr": "cinquante", "type": "word", "tag": "Number", "hint": "Numbers on p. 59." },
+            { "id": "c6_soixante_dix", "en": "seventy (70)", "fr": "soixante-dix", "type": "word", "tag": "Number", "hint": "Literally 60 + 10 (p. 59)." },
+            { "id": "c6_quatre_vingts", "en": "eighty (80)", "fr": "quatre-vingts", "type": "word", "tag": "Number", "hint": "Literally 4 × 20 — keeps 's' on 80 alone (p. 59)." },
+            { "id": "c6_quatre_vingt_dix", "en": "ninety (90)", "fr": "quatre-vingt-dix", "type": "word", "tag": "Number", "hint": "Literally 4 × 20 + 10 (p. 59)." },
+            { "id": "c6_cent", "en": "one hundred (100)", "fr": "cent", "type": "word", "tag": "Number", "hint": "No 'un' before cent or mille (p. 59)." },
+            { "id": "c6_mille", "en": "one thousand (1000)", "fr": "mille", "type": "word", "tag": "Number", "hint": "Numbers on p. 59." },
+            { "id": "c6_il_faut_aller", "en": "We must go to school.", "fr": "Il faut aller à l'école.", "type": "sentence", "tag": "il faut", "hint": "'il faut + infinitive' = it is necessary / must (p. 58)." },
+            { "id": "c6_il_faut_devoirs", "en": "You have to do your homework.", "fr": "Il faut faire tes devoirs.", "type": "sentence", "tag": "il faut", "hint": "Example on p. 58." }
+          ]
+        },
+        {
+          "id": "ch6-l2",
+          "number": "6.2",
+          "title": "Shopping, Acheter, Vouloir & Pouvoir",
+          "frenchTitle": "Au marché: acheter, vouloir et pouvoir",
+          "pages": "pp. 58, 60–64",
+          "focus": "Sentences",
+          "description": "Ask market prices, conjugate acheter (with its grave accent è), and practice vouloir (to want) and pouvoir (can).",
+          "items": [
+            { "id": "c6_un_kilo_bananes", "en": "How much is a kilo of bananas?", "fr": "Un kilo de bananes, c'est combien?", "type": "sentence", "tag": "Market price", "hint": "Use 'de' for quantities: un kilo de... (p. 61)." },
+            { "id": "c6_un_euro_dix", "en": "One euro ten, please.", "fr": "Un euro dix, s'il vous plaît.", "type": "sentence", "tag": "Market price", "hint": "Polite shopping dialogue on p. 61." },
+            { "id": "c6_nous_achetons_carottes", "en": "We buy two kilos of carrots.", "fr": "Nous achetons deux kilos de carottes.", "type": "sentence", "tag": "acheter (nous)", "hint": "No accent on 'e' in nous achetons / vous achetez (p. 60, 62)." },
+            { "id": "c6_j_achete_pommes_de_terre", "en": "I buy potatoes and a melon.", "fr": "J'achète des pommes de terre et un melon.", "type": "sentence", "tag": "acheter (je)", "hint": "Grave accent è in j'achète / tu achètes / il achète (p. 60, 62)." },
+            { "id": "c6_ils_achetent_tomates", "en": "They buy tomatoes and apples.", "fr": "Ils achètent des tomates et des pommes.", "type": "sentence", "tag": "acheter (ils)", "hint": "Exercice 6.5 (p. 62) — grave accent è." },
+            { "id": "c6_quand_on_veut_on_peut", "en": "Where there is a will, there is a way!", "fr": "Quand on veut, on peut!", "type": "sentence", "tag": "Proverb", "hint": "Famous French saying on p. 62." },
+            { "id": "c6_je_veux_bien", "en": "Yes, please / I would like that.", "fr": "Je veux bien.", "type": "sentence", "tag": "vouloir", "hint": "Handy everyday expression on p. 62." },
+            { "id": "c6_je_peux_venir_demain", "en": "I can come tomorrow.", "fr": "Je peux venir demain.", "type": "sentence", "tag": "pouvoir", "hint": "Pouvoir + infinitive translates English 'can' (p. 62)." },
+            { "id": "c6_tu_veux_regarder_tele", "en": "Do you want to watch TV?", "fr": "Tu veux regarder la télé?", "type": "sentence", "tag": "vouloir (tu)", "hint": "Exercice 6.6 (p. 63)." },
+            { "id": "c6_nous_voulons_manger", "en": "We want to eat right away.", "fr": "Nous voulons manger tout de suite.", "type": "sentence", "tag": "vouloir (nous)", "hint": "Exercice 6.6 (p. 63)." },
+            { "id": "c6_je_veux_faire_devoirs", "en": "I want to do my homework.", "fr": "Je veux faire mes devoirs.", "type": "sentence", "tag": "vouloir (je)", "hint": "Exercice 6.6 (p. 63)." },
+            { "id": "c6_elle_ne_peut_pas", "en": "She cannot, because she has no money.", "fr": "Elle ne peut pas, parce qu'elle n'a pas d'argent.", "type": "sentence", "tag": "pouvoir (neg.)", "hint": "Exercice 6.7 (p. 63) — 'l'argent' = money." },
+            { "id": "c6_philippe_veut_acheter_carte", "en": "Philippe wants to buy a birthday card for his mum.", "fr": "Philippe veut acheter une carte d'anniversaire pour sa maman.", "type": "sentence", "tag": "Exercice 6.10", "hint": "From the shopping story on p. 64." },
+            { "id": "c6_je_peux_aller_en_train", "en": "I can go to school by train.", "fr": "Je peux aller à l'école en train.", "type": "sentence", "tag": "Exercice 6.8", "hint": "Exam-style translation on p. 63." },
+            { "id": "c6_philippe_peut_promener_chien", "en": "Philippe can walk the dog.", "fr": "Philippe peut promener le chien.", "type": "sentence", "tag": "Exercice 6.8", "hint": "Exam-style translation on p. 63." },
+            { "id": "c6_vous_pouvez_rester_ici", "en": "You (pl.) can stay here if you want.", "fr": "Vous pouvez rester ici si vous voulez.", "type": "sentence", "tag": "Exercice 6.8", "hint": "'rester' = to stay (p. 63)." }
+          ]
+        }
+      ]
     }
   ],
   "grammarGuides": [
@@ -372,6 +654,51 @@
         ["nous", "-ons", "nous regardons", "we watch / are watching"],
         ["vous", "-ez", "vous regardez", "you (pl.) watch / are watching"],
         ["ils / elles", "-ent (silent)", "ils/elles regardent", "they watch / are watching"]
+      ]
+    },
+    {
+      "id": "reflexives-time",
+      "title": "Reflexive Verbs & Telling the Time",
+      "pages": "pp. 34–36",
+      "summary": "Reflexive verbs pair each subject with a matching 'self' pronoun (me, te, se, nous, vous, se). Use 'il est ... heures' for time, plus et quart, et demie, and moins le quart.",
+      "headers": ["Pronoun", "se laver", "Time Expression", "English"],
+      "rows": [
+        ["je", "je me lave", "Il est sept heures.", "It is 7 o'clock."],
+        ["tu", "tu te laves", "Il est deux heures et quart.", "It is 2:15."],
+        ["il / elle", "il/elle se lave", "Il est dix heures et demie.", "It is 10:30."],
+        ["nous", "nous nous lavons", "Il est quatre heures moins le quart.", "It is 3:45."],
+        ["vous", "vous vous lavez", "Il est midi / minuit.", "It is noon / midnight."],
+        ["ils / elles", "ils/elles se lavent", "du matin / de l'après-midi / du soir", "a.m. / p.m. / evening"]
+      ]
+    },
+    {
+      "id": "negatives-adjectives",
+      "title": "Negatives (ne...pas) & Adjective Agreement",
+      "pages": "pp. 43, 51–56",
+      "summary": "Make any verb negative with ne (n' before a vowel) ... pas. Adjectives normally follow the noun and agree in gender (often adding -e, or special patterns below).",
+      "headers": ["Pattern", "Masculine", "Feminine", "Meaning"],
+      "rows": [
+        ["Negative", "Il mange / Il écoute", "Il ne mange pas / Il n'écoute pas", "does not eat / listen"],
+        ["Regular (+e)", "grand / bleu / français", "grande / bleue / française", "tall / blue / French"],
+        ["-x → -se", "heureux / paresseux", "heureuse / paresseuse", "happy / lazy"],
+        ["-f → -ve", "neuf / sportif", "neuve / sportive", "brand new / sporty"],
+        ["-er → -ère", "premier", "première", "first"],
+        ["Irregular", "beau / vieux / nouveau / blanc", "belle / vieille / nouvelle / blanche", "beautiful / old / new / white"]
+      ]
+    },
+    {
+      "id": "dates-numbers-acheter",
+      "title": "Numbers (40–1000), Acheter & Il faut",
+      "pages": "pp. 57–62",
+      "summary": "Months and days are lowercase in French. Use 'le premier' for the 1st of the month. 'Acheter' takes a grave accent (è) everywhere except nous/vous. 'Il faut + infinitive' means 'must / ought to'.",
+      "headers": ["Number / Form", "French", "Acheter (to buy)", "English"],
+      "rows": [
+        ["40 / 50 / 60", "quarante / cinquante / soixante", "j'achète", "I buy"],
+        ["70 / 71", "soixante-dix / soixante et onze", "tu achètes", "you (sing.) buy"],
+        ["80 / 90", "quatre-vingts / quatre-vingt-dix", "il / elle achète", "he / she buys"],
+        ["100 / 1000", "cent / mille", "nous achetons", "we buy (no accent)"],
+        ["1st Jan", "le premier janvier", "vous achetez", "you (pl.) buy (no accent)"],
+        ["Necessity", "Il faut aller à l'école.", "ils / elles achètent", "they buy"]
       ]
     }
   ]

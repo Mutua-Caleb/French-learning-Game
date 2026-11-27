@@ -119,6 +119,15 @@ function getRelevantGrammar(lesson, curriculum) {
       ],
     };
   }
+  if (id.includes('ch4-l1') || id.includes('ch4-l2') || id === 'para-9') {
+    return curriculum.grammarGuides.find((g) => g.id === 'reflexives-time') || curriculum.grammarGuides[0];
+  }
+  if (id.includes('ch4-l4') || id.includes('ch5') || id === 'para-10') {
+    return curriculum.grammarGuides.find((g) => g.id === 'negatives-adjectives') || curriculum.grammarGuides[0];
+  }
+  if (id.includes('ch6') || id === 'para-11') {
+    return curriculum.grammarGuides.find((g) => g.id === 'dates-numbers-acheter') || curriculum.grammarGuides[0];
+  }
   if (id.includes('ch2-l3') || id.includes('ch3-l3')) {
     return curriculum.grammarGuides.find((g) => g.id === 'articles') || curriculum.grammarGuides[0];
   }
